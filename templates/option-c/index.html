@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>True Jesus Church | Community & Global Fellowship Hub (Option C: Utility)</title>
+  <meta name="description" content="Find a local True Jesus Church congregation, check Friday and Sabbath worship schedules, join live prayer streams, and explore apostolic biblical truths.">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            hub: {
+              navy: '#0A2540',
+              deep: '#061626',
+              blue: '#0066FF',
+              blueLight: '#EBF3FF',
+              teal: '#0D9488',
+              emerald: '#059669',
+              emeraldLight: '#ECFDF5',
+              amber: '#D97706',
+              bg: '#F8FAFC',
+              card: '#FFFFFF',
+              border: '#E2E8F0',
+              text: '#0F172A',
+              muted: '#64748B'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #F8FAFC;
+      color: #0F172A;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased selection:bg-hub-blue selection:text-white">
+
+  <!-- Utility Announcement Banner -->
+  <aside aria-label="Service schedule banner" class="bg-hub-navy text-white text-xs py-2 px-4 border-b border-white/10">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 font-semibold uppercase text-[10px] tracking-wider flex items-center gap-1">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+          Weekly Schedule
+        </span>
+        <span class="text-slate-300">Sabbath Worship: Friday Evening 7:30 PM & Saturday All Day (Worldwide)</span>
+      </div>
+      <div class="flex items-center gap-4 text-xs text-slate-300">
+        <a href="#first-timers" class="hover:text-white transition-colors">Visiting for the first time?</a>
+        <span class="text-white/20">|</span>
+        <a href="#language-directory" class="text-blue-300 hover:text-white flex items-center gap-1">
+          <span>Global Sites (12)</span>
+          <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Clean Utility Header -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-hub-border shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo / Wordmark -->
+      <a href="index.html" class="flex items-center gap-3.5 group">
+        <div class="w-11 h-11 rounded-xl bg-hub-blue text-white flex items-center justify-center font-bold shadow-md shadow-blue-500/20 group-hover:bg-blue-700 transition-colors">
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2v20M5 8h14"/>
+            <path d="M18 14a6 6 0 01-12 0"/>
+          </svg>
+        </div>
+        <div>
+          <div class="font-extrabold text-lg sm:text-xl text-hub-navy tracking-tight leading-none group-hover:text-hub-blue transition-colors">
+            TRUE JESUS CHURCH
+          </div>
+          <div class="text-[11px] font-semibold text-hub-muted tracking-wider uppercase mt-1">
+            Global Fellowship & Community Hub
+          </div>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-700">
+        <a href="#locator-hero" class="text-hub-blue hover:text-blue-700 transition-colors flex items-center gap-1.5">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          Find a Church
+        </a>
+        <a href="#schedule" class="hover:text-hub-navy transition-colors">Worship Schedule</a>
+        <a href="#first-timers" class="hover:text-hub-navy transition-colors">First-Time Visitors</a>
+        <a href="#beliefs-quick" class="hover:text-hub-navy transition-colors">Basic Beliefs</a>
+        <a href="#livestream-hub" class="hover:text-hub-navy transition-colors">Live Streams</a>
+        <a href="#resources" class="hover:text-hub-navy transition-colors">Resources</a>
+      </nav>
+
+      <!-- Quick Action CTA -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="#locator-hero" class="px-5 py-2.5 rounded-xl bg-hub-blue hover:bg-blue-700 text-white font-bold text-xs shadow-sm hover:shadow-md transition-all flex items-center gap-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          <span>Locate Fellowship</span>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <button id="mobileNavBtn" class="md:hidden p-2 text-slate-700 hover:text-hub-navy rounded-lg" aria-label="Toggle menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobileNavDrawer" class="hidden md:hidden bg-white border-b border-hub-border px-4 py-4 space-y-3">
+      <a href="#locator-hero" class="block py-2 text-base font-semibold text-hub-blue">Find a Church</a>
+      <a href="#schedule" class="block py-2 text-base font-semibold text-slate-800">Worship Schedule & Times</a>
+      <a href="#first-timers" class="block py-2 text-base font-semibold text-slate-800">First-Time Visitor Guide</a>
+      <a href="#beliefs-quick" class="block py-2 text-base font-semibold text-slate-800">10 Basic Beliefs</a>
+      <a href="#livestream-hub" class="block py-2 text-base font-semibold text-slate-800">Live Worship Streams</a>
+      <a href="#resources" class="block py-2 text-base font-semibold text-slate-800">Publications & Resources</a>
+      <div class="pt-3 border-t border-slate-200">
+        <a href="#locator-hero" class="block w-full py-2.5 text-center bg-hub-blue text-white font-bold rounded-xl text-sm">
+          Search Nearest Church
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+
+    <!-- HERO SECTION: INTERACTIVE LOCATOR & COMMUNITY UTILITY HERO -->
+    <section id="locator-hero" class="relative bg-gradient-to-b from-blue-50/70 via-white to-hub-bg pt-12 pb-16 md:pt-16 md:pb-24 border-b border-hub-border">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        
+        <!-- Welcome Pill -->
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-100/80 text-blue-800 text-xs font-bold tracking-wide uppercase mb-6">
+          <svg class="w-4 h-4 text-hub-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          Global Community & Worship Directory
+        </div>
+
+        <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold text-hub-navy tracking-tight leading-tight mb-4">
+          Find Fellowship.<br>
+          <span class="text-hub-blue">Grow in Apostolic Truth.</span>
+        </h1>
+
+        <p class="max-w-2xl mx-auto text-sm sm:text-base text-hub-muted font-normal mb-8">
+          The True Jesus Church welcomes seekers and believers worldwide. Locate a local congregation near you, check service hours, and experience the warmth of true Christian fellowship.
+        </p>
+
+        <!-- HIGH-UTILITY INTERACTIVE SEARCH BAR COMPONENT -->
+        <div class="bg-white p-3 sm:p-4 rounded-2xl shadow-xl border border-hub-border max-w-3xl mx-auto text-left">
+          <div class="flex flex-col md:flex-row gap-3">
+            
+            <!-- City / Location Input -->
+            <div class="relative flex-grow">
+              <label for="hubSearchLocation" class="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1">Your Location</label>
+              <div class="relative">
+                <svg class="w-5 h-5 text-slate-400 absolute left-3 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                <input id="hubSearchLocation" type="text" placeholder="Enter city, state, or postal code..." value="Los Angeles, CA" class="w-full pl-10 pr-3 py-2 text-sm font-semibold rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-hub-blue text-slate-800">
+              </div>
+            </div>
+
+            <!-- Service Language Filter -->
+            <div class="w-full md:w-48">
+              <label for="hubLanguageSelect" class="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1">Service Language</label>
+              <select id="hubLanguageSelect" class="w-full py-2 px-3 text-sm font-semibold rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-hub-blue text-slate-800 bg-white">
+                <option>All Languages</option>
+                <option selected>English & Bilingual</option>
+                <option>Mandarin 國語</option>
+                <option>Cantonese 粵語</option>
+                <option>Spanish Español</option>
+                <option>French Français</option>
+              </select>
+            </div>
+
+            <!-- Search Action CTA -->
+            <div class="flex items-end">
+              <button class="w-full md:w-auto px-7 py-2.5 rounded-lg bg-hub-blue hover:bg-blue-700 text-white font-bold text-sm shadow-md transition-all flex items-center justify-center gap-2">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                <span>Find Churches</span>
+              </button>
+            </div>
+
+          </div>
+
+          <!-- Quick Region Filter Chips -->
+          <div class="mt-4 pt-3 border-t border-slate-100 flex flex-wrap items-center gap-2 text-xs">
+            <span class="text-slate-400 font-medium">Quick Select Region:</span>
+            <button class="px-2.5 py-1 rounded-md bg-blue-50 text-hub-blue font-semibold hover:bg-blue-100 transition-colors">North America (120+)</button>
+            <button class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 font-medium hover:bg-slate-200 transition-colors">United Kingdom & Europe (45+)</button>
+            <button class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 font-medium hover:bg-slate-200 transition-colors">Taiwan & East Asia (250+)</button>
+            <button class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 font-medium hover:bg-slate-200 transition-colors">Southeast Asia (400+)</button>
+            <button class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 font-medium hover:bg-slate-200 transition-colors">Australia & Oceania (25+)</button>
+          </div>
+        </div>
+
+        <!-- Practical Entry Pillars -->
+        <div class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl mx-auto text-xs font-semibold">
+          <a href="#schedule" class="p-3 bg-white rounded-xl border border-hub-border hover:border-hub-blue hover:shadow-sm transition-all text-slate-700 flex items-center justify-center gap-2">
+            <svg class="w-4 h-4 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span>Sabbath Hours</span>
+          </a>
+          <a href="#first-timers" class="p-3 bg-white rounded-xl border border-hub-border hover:border-hub-blue hover:shadow-sm transition-all text-slate-700 flex items-center justify-center gap-2">
+            <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span>Visitor Checklist</span>
+          </a>
+          <a href="#beliefs-quick" class="p-3 bg-white rounded-xl border border-hub-border hover:border-hub-blue hover:shadow-sm transition-all text-slate-700 flex items-center justify-center gap-2">
+            <svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+            <span>10 Basic Beliefs</span>
+          </a>
+          <a href="#livestream-hub" class="p-3 bg-white rounded-xl border border-hub-border hover:border-hub-blue hover:shadow-sm transition-all text-slate-700 flex items-center justify-center gap-2">
+            <svg class="w-4 h-4 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+            <span>Live Broadcasts</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: REAL-TIME SERVICE SCHEDULE -->
+    <section id="schedule" class="py-14 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-hub-blue">Weekly Rhythm of Worship</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-hub-navy mt-1">Sabbath Worship Schedules</h2>
+        </div>
+        <p class="text-xs sm:text-sm text-slate-500 max-w-md mt-2 md:mt-0">
+          Following the apostolic practice, True Jesus Church observes the 7th-day Sabbath from sunset Friday to sunset Saturday.
+        </p>
+      </div>
+
+      <!-- Schedule Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Service 1 -->
+        <div class="bg-white p-6 rounded-2xl border border-hub-border shadow-xs hover:border-hub-blue transition-colors">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-xs font-bold">Friday Evening</span>
+            <span class="text-xs font-mono text-hub-blue font-bold">7:30 PM – 9:00 PM</span>
+          </div>
+          <h3 class="font-bold text-lg text-hub-navy mb-2">Sabbath Eve Fellowship & Prayer</h3>
+          <p class="text-xs text-slate-600 font-normal leading-relaxed mb-4">
+            Welcoming the holy Sabbath day with hymn singing, scripture meditation, topical bible study, and earnest kneeling prayer in the Spirit.
+          </p>
+          <div class="p-3 bg-slate-50 rounded-xl text-[11px] text-slate-600 space-y-1">
+            <div class="flex items-center gap-2"><span class="font-semibold text-slate-800">Format:</span> Hymns (15m), Sermon (50m), Prayer (20m)</div>
+            <div class="flex items-center gap-2"><span class="font-semibold text-slate-800">Attendees:</span> All ages, youth fellowship sessions</div>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="bg-white p-6 rounded-2xl border-2 border-hub-blue shadow-md relative">
+          <span class="absolute -top-3 right-4 px-2.5 py-0.5 rounded-full bg-hub-blue text-white text-[10px] font-bold uppercase tracking-wider">
+            Primary Service
+          </span>
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-3 py-1 rounded-full bg-blue-100 text-hub-blue text-xs font-bold">Saturday Morning</span>
+            <span class="text-xs font-mono text-hub-blue font-bold">10:00 AM – 12:00 PM</span>
+          </div>
+          <h3 class="font-bold text-lg text-hub-navy mb-2">Sabbath Morning Divine Service</h3>
+          <p class="text-xs text-slate-600 font-normal leading-relaxed mb-4">
+            The focal point of weekly worship. Includes pastoral sermon, multilingual audio translation, and communal prayer of intercession.
+          </p>
+          <div class="p-3 bg-blue-50 rounded-xl text-[11px] text-slate-700 space-y-1">
+            <div class="flex items-center gap-2"><span class="font-semibold text-slate-900">Fellowship:</span> Complimentary communal lunch at 12:00 PM</div>
+            <div class="flex items-center gap-2"><span class="font-semibold text-slate-900">Broadcast:</span> Global livestream available</div>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="bg-white p-6 rounded-2xl border border-hub-border shadow-xs hover:border-hub-blue transition-colors">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-xs font-bold">Saturday Afternoon</span>
+            <span class="text-xs font-mono text-hub-blue font-bold">1:30 PM – 3:30 PM</span>
+          </div>
+          <h3 class="font-bold text-lg text-hub-navy mb-2">Afternoon Worship & Sabbath School</h3>
+          <p class="text-xs text-slate-600 font-normal leading-relaxed mb-4">
+            Afternoon sermon followed by age-graded Sabbath School classes for toddlers, youth, and young adults.
+          </p>
+          <div class="p-3 bg-slate-50 rounded-xl text-[11px] text-slate-600 space-y-1">
+            <div class="flex items-center gap-2"><span class="font-semibold text-slate-800">Classes:</span> Kindergarten, Elementary, J/S High, Seeker Class</div>
+            <div class="flex items-center gap-2"><span class="font-semibold text-slate-800">Choir:</span> Rehearsals conclude after service</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: FIRST-TIME VISITOR GUIDE ("WHAT TO EXPECT") -->
+    <section id="first-timers" class="py-14 bg-white border-y border-hub-border">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-xl mx-auto mb-12">
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-600">Visiting for the First Time?</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-hub-navy mt-1">What to Expect at a TJC Service</h2>
+          <p class="text-xs sm:text-sm text-slate-500 mt-2">
+            We know visiting a new church can feel unfamiliar. Here is a clear, welcoming guide to our worship traditions.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <div class="p-5 rounded-2xl bg-hub-bg border border-hub-border">
+            <div class="w-10 h-10 rounded-xl bg-blue-100 text-hub-blue flex items-center justify-center font-bold mb-4">
+              01
+            </div>
+            <h3 class="font-bold text-base text-hub-navy mb-2">Attire & Arrival</h3>
+            <p class="text-xs text-slate-600 font-normal leading-relaxed">
+              We dress with modest and respectful attire honoring God’s presence. Greeters at the foyer will hand you a bulletin and hymnal.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-hub-bg border border-hub-border">
+            <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold mb-4">
+              02
+            </div>
+            <h3 class="font-bold text-base text-hub-navy mb-2">Kneeling Prayer</h3>
+            <p class="text-xs text-slate-600 font-normal leading-relaxed">
+              Before and after service, we kneel on prayer cushions. We pray in the Spirit (speaking in unknown tongues) or say "Hallelujah" in quiet meditation.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-hub-bg border border-hub-border">
+            <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center font-bold mb-4">
+              03
+            </div>
+            <h3 class="font-bold text-base text-hub-navy mb-2">Expository Sermons</h3>
+            <p class="text-xs text-slate-600 font-normal leading-relaxed">
+              Our messages center on verse-by-verse scripture exposition from the Bible. Feel free to open your Bible or use our provided pew Bibles.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-hub-bg border border-hub-border">
+            <div class="w-10 h-10 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center font-bold mb-4">
+              04
+            </div>
+            <h3 class="font-bold text-base text-hub-navy mb-2">Fellowship Lunch</h3>
+            <p class="text-xs text-slate-600 font-normal leading-relaxed">
+              After Saturday morning service, all guests and members share a complimentary lunch. It is a wonderful chance to ask questions and make friends.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: LIVE STREAMING HUB -->
+    <section id="livestream-hub" class="py-14 bg-hub-navy text-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-8 pb-4 border-b border-white/10">
+          <div>
+            <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              Live Audio & Video Sanctuary
+            </span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">International Live Stream</h2>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-xs text-slate-300">Channel:</span>
+            <span class="px-3 py-1 bg-white/10 rounded-lg text-xs font-mono font-medium text-blue-200">Main Feed 1 (1080p)</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <!-- Video Frame -->
+          <div class="lg:col-span-2 bg-hub-deep rounded-2xl overflow-hidden border border-white/10 flex flex-col justify-between">
+            <div class="aspect-video bg-black flex items-center justify-center relative p-6 text-center">
+              <div>
+                <span class="px-2.5 py-0.5 rounded bg-red-600 text-white font-bold text-[10px] tracking-wider uppercase inline-block mb-3">Live Broadcast</span>
+                <h3 class="text-xl sm:text-2xl font-bold text-white mb-2">Sabbath Worship: The Living Water</h3>
+                <p class="text-xs text-slate-300">International Assembly Service · Elder Mark Chen</p>
+                <button class="mt-4 px-6 py-2.5 rounded-full bg-hub-blue hover:bg-blue-600 text-white text-xs font-bold transition-colors inline-flex items-center gap-2 shadow-lg">
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6V4z"/></svg>
+                  Connect to Broadcast
+                </button>
+              </div>
+            </div>
+            <div class="p-4 bg-white/5 border-t border-white/10 flex items-center justify-between text-xs text-slate-300">
+              <span>Simultaneous Translation: English, Mandarin, Spanish</span>
+              <a href="https://tjc.org/live/" target="_blank" class="text-blue-400 hover:underline">Full Broadcast Page &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Active Services Sidebar -->
+          <div class="bg-white/5 p-5 rounded-2xl border border-white/10 flex flex-col justify-between">
+            <div>
+              <h4 class="font-bold text-sm text-white mb-3">Other Active Feeds</h4>
+              <div class="space-y-3 text-xs">
+                <div class="p-3 bg-white/5 rounded-xl border border-white/5 hover:bg-white/10 transition-colors">
+                  <div class="font-bold text-blue-300">London, United Kingdom</div>
+                  <div class="text-slate-400 text-[11px]">Sabbath Afternoon Bible Study</div>
+                  <div class="text-emerald-400 text-[10px] mt-1 font-mono">● LIVE NOW</div>
+                </div>
+                <div class="p-3 bg-white/5 rounded-xl border border-white/5 hover:bg-white/10 transition-colors">
+                  <div class="font-bold text-blue-300">Taipei, Taiwan (臺灣總會)</div>
+                  <div class="text-slate-400 text-[11px]">Mandarin Service (國語聚會)</div>
+                  <div class="text-slate-400 text-[10px] mt-1 font-mono">Starts in 30 mins</div>
+                </div>
+                <div class="p-3 bg-white/5 rounded-xl border border-white/5 hover:bg-white/10 transition-colors">
+                  <div class="font-bold text-blue-300">Sabah, Malaysia</div>
+                  <div class="text-slate-400 text-[11px]">Youth Fellowship Gathering</div>
+                  <div class="text-slate-400 text-[10px] mt-1 font-mono">Archive Available</div>
+                </div>
+              </div>
+            </div>
+            <div class="pt-4 border-t border-white/10 text-center">
+              <a href="https://tjc.org/sermons/" class="text-xs text-slate-300 hover:text-white underline">
+                Browse 3,000+ Sermon Recordings
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: BASIC BELIEFS QUICK-REFERENCE -->
+    <section id="beliefs-quick" class="py-14 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 pb-3 border-b border-hub-border">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-hub-blue">Doctrinal Summary</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-hub-navy mt-1">The 10 Basic Beliefs</h2>
+        </div>
+        <a href="https://tjc.org/basic-beliefs/" target="_blank" class="text-xs font-bold text-hub-blue hover:underline mt-2 md:mt-0">
+          Full Doctrinal Articles &rarr;
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 text-xs">
+        <div class="p-4 bg-white rounded-xl border border-hub-border shadow-2xs">
+          <div class="font-mono text-hub-blue font-bold text-[11px] mb-1">01. One God</div>
+          <div class="font-bold text-hub-navy mb-1">Jesus the True God</div>
+          <div class="text-slate-500 text-[11px]">The Word became flesh, died for redemption, resurrected, and is the only Savior.</div>
+        </div>
+        <div class="p-4 bg-white rounded-xl border border-hub-border shadow-2xs">
+          <div class="font-mono text-hub-blue font-bold text-[11px] mb-1">02. Scripture</div>
+          <div class="font-bold text-hub-navy mb-1">The Holy Bible</div>
+          <div class="text-slate-500 text-[11px]">Old and New Testaments inspired by God, the only written standard for faith.</div>
+        </div>
+        <div class="p-4 bg-white rounded-xl border border-hub-border shadow-2xs">
+          <div class="font-mono text-hub-blue font-bold text-[11px] mb-1">03. Grace</div>
+          <div class="font-bold text-hub-navy mb-1">Salvation</div>
+          <div class="text-slate-500 text-[11px]">Given by grace through faith; believers must rely on the Spirit to pursue holiness.</div>
+        </div>
+        <div class="p-4 bg-white rounded-xl border border-hub-border shadow-2xs">
+          <div class="font-mono text-hub-blue font-bold text-[11px] mb-1">04. Spirit</div>
+          <div class="font-bold text-hub-navy mb-1">Holy Spirit Baptism</div>
+          <div class="text-slate-500 text-[11px]">Evidenced by speaking in unknown tongues, guarantee of heavenly inheritance.</div>
+        </div>
+        <div class="p-4 bg-white rounded-xl border border-hub-border shadow-2xs">
+          <div class="font-mono text-hub-blue font-bold text-[11px] mb-1">05. Sacrament</div>
+          <div class="font-bold text-hub-navy mb-1">Water Baptism</div>
+          <div class="text-slate-500 text-[11px]">Remission of sins in living water, head bowed, in Lord Jesus' name.</div>
+        </div>
+        <div class="p-4 bg-white rounded-xl border border-hub-border shadow-2xs">
+          <div class="font-mono text-hub-blue font-bold text-[11px] mb-1">06. Sacrament</div>
+          <div class="font-bold text-hub-navy mb-1">Footwashing</div>
+          <div class="text-slate-500 text-[11px]">Enables fellowship with the Lord Jesus, teaches mutual love and humility.</div>
+        </div>
+        <div class="p-4 bg-white rounded-xl border border-hub-border shadow-2xs">
+          <div class="font-mono text-hub-blue font-bold text-[11px] mb-1">07. Sacrament</div>
+          <div class="font-bold text-hub-navy mb-1">Holy Communion</div>
+          <div class="text-slate-500 text-[11px]">Commemorates the Lord's death with one unleavened bread and cup of juice.</div>
+        </div>
+        <div class="p-4 bg-white rounded-xl border border-hub-border shadow-2xs">
+          <div class="font-mono text-hub-blue font-bold text-[11px] mb-1">08. Holy Day</div>
+          <div class="font-bold text-hub-navy mb-1">The Sabbath Day</div>
+          <div class="text-slate-500 text-[11px]">Seventh day of the week (Saturday), blessed and sanctified by God in creation.</div>
+        </div>
+        <div class="p-4 bg-white rounded-xl border border-hub-border shadow-2xs">
+          <div class="font-mono text-hub-blue font-bold text-[11px] mb-1">09. Body</div>
+          <div class="font-bold text-hub-navy mb-1">The True Church</div>
+          <div class="text-slate-500 text-[11px]">Restored by God through the Holy Spirit in the time of the latter rain.</div>
+        </div>
+        <div class="p-4 bg-white rounded-xl border border-hub-border shadow-2xs">
+          <div class="font-mono text-hub-blue font-bold text-[11px] mb-1">10. Hope</div>
+          <div class="font-bold text-hub-navy mb-1">The Second Coming</div>
+          <div class="text-slate-500 text-[11px]">Christ will descend to judge the world; righteous receive eternal life.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: RESOURCE DOWNLOAD CENTER -->
+    <section id="resources" class="py-14 bg-white border-t border-hub-border">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-xl mx-auto mb-10">
+          <span class="text-xs font-bold uppercase tracking-wider text-hub-blue">Digital Library</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-hub-navy mt-1">Study & Devotional Resources</h2>
+          <p class="text-xs sm:text-sm text-slate-500 mt-1">Download materials for personal Bible study, family worship, and Sabbath school.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div class="p-6 rounded-2xl bg-hub-bg border border-hub-border flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold mb-3">
+                📖
+              </div>
+              <h3 class="font-bold text-base text-hub-navy mb-1">Manna Magazine</h3>
+              <p class="text-xs text-slate-600 mb-4">Quarterly doctrinal journal and inspiring testimonies.</p>
+            </div>
+            <a href="https://tjc.org/manna/" target="_blank" class="text-xs font-bold text-hub-blue hover:underline">Download Latest Issue &rarr;</a>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-hub-bg border border-hub-border flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-800 flex items-center justify-center font-bold mb-3">
+                ☀️
+              </div>
+              <h3 class="font-bold text-base text-hub-navy mb-1">eRhema Daily Devotion</h3>
+              <p class="text-xs text-slate-600 mb-4">Short daily meditations and scripture insights delivered to your phone.</p>
+            </div>
+            <a href="https://tjc.org/erhema/" target="_blank" class="text-xs font-bold text-hub-blue hover:underline">Read Today's Devotional &rarr;</a>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-hub-bg border border-hub-border flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold mb-3">
+                🎵
+              </div>
+              <h3 class="font-bold text-base text-hub-navy mb-1">Hymnal of Praise</h3>
+              <p class="text-xs text-slate-600 mb-4">Official TJC hymnal audio tracks and sheet music PDF downloads.</p>
+            </div>
+            <a href="https://tjc.org/hymns/" target="_blank" class="text-xs font-bold text-hub-blue hover:underline">Access Hymn Archive &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MANDATORY GLOBAL FOOTER SPECIFICATION -->
+  <footer class="bg-hub-deep text-white pt-16 pb-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+        
+        <div class="md:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-lg bg-hub-blue text-white flex items-center justify-center font-bold text-base">
+              TJC
+            </div>
+            <div>
+              <div class="font-extrabold text-lg text-white">TRUE JESUS CHURCH</div>
+              <div class="text-[10px] text-slate-400 tracking-wider uppercase">International Assembly · Established 1917</div>
+            </div>
+          </div>
+          <p class="text-xs text-slate-300 font-normal leading-relaxed max-w-md">
+            The True Jesus Church is a global fellowship dedicated to preaching the restored apostolic truth to all nations, observing the holy Sabbath, and nurturing local communities in the Holy Spirit.
+          </p>
+          <div class="text-xs text-blue-300 font-mono">
+            Main Site: <a href="https://tjc.org/" class="underline">tjc.org/</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-300 mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li><a href="#locator-hero" class="hover:text-white transition-colors">Church Locator</a></li>
+            <li><a href="#schedule" class="hover:text-white transition-colors">Worship Schedules</a></li>
+            <li><a href="#first-timers" class="hover:text-white transition-colors">Visitor Checklist</a></li>
+            <li><a href="#beliefs-quick" class="hover:text-white transition-colors">10 Basic Beliefs</a></li>
+            <li><a href="#livestream-hub" class="hover:text-white transition-colors">Live Video Feeds</a></li>
+            <li><a href="#resources" class="hover:text-white transition-colors">Digital Publications</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-300 mb-4">Assemblies & Boards</h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li><a href="https://tjc.org/ia/" class="hover:text-white transition-colors">International Assembly (IA)</a></li>
+            <li><a href="https://tjc.org/ga-us/" class="hover:text-white transition-colors">General Assembly of USA</a></li>
+            <li><a href="https://tjc.org/ga-uk/" class="hover:text-white transition-colors">General Assembly of UK</a></li>
+            <li><a href="https://tjc.org/ga-tw/" class="hover:text-white transition-colors">GA of Taiwan (臺灣總會)</a></li>
+            <li><a href="https://tjc.org/ga-my/" class="hover:text-white transition-colors">GA of Malaysia & Sabah</a></li>
+            <li><a href="https://tjc.org/cb-eu/" class="hover:text-white transition-colors">European Coordination Board</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- PROMINENT GLOBAL LANGUAGE SWITCHER (MANDATORY SPECIFICATION) -->
+      <div id="language-directory" class="py-10 border-b border-white/10">
+        <div class="flex items-center gap-2 mb-3">
+          <svg class="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/></svg>
+          <h4 class="text-xs font-bold uppercase tracking-widest text-blue-400">Global Language Portals & Sub-Path Architecture</h4>
+        </div>
+        <p class="text-xs text-slate-400 mb-6 font-normal">
+          Direct language routing deployed under the international <span class="font-mono text-white">tjc.org</span> architecture:
+        </p>
+
+        <!-- Standard URL Routing Matrix -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 text-xs">
+          
+          <a href="https://tjc.org/" class="p-3 rounded-xl bg-white/5 border border-white/10 hover:border-blue-400 transition-colors block">
+            <div class="font-bold text-white">English (Default)</div>
+            <div class="font-mono text-[11px] text-blue-300 mt-1">tjc.org/</div>
+            <div class="text-[10px] text-slate-400">Global Hub</div>
+          </a>
+
+          <a href="https://tjc.org/zh" class="p-3 rounded-xl bg-white/5 border border-white/10 hover:border-blue-400 transition-colors block">
+            <div class="font-bold text-white">中文 (Chinese)</div>
+            <div class="font-mono text-[11px] text-blue-300 mt-1">tjc.org/zh</div>
+            <div class="text-[10px] text-slate-400">華語 · 國語</div>
+          </a>
+
+          <a href="https://tjc.org/es" class="p-3 rounded-xl bg-white/5 border border-white/10 hover:border-blue-400 transition-colors block">
+            <div class="font-bold text-white">Español</div>
+            <div class="font-mono text-[11px] text-blue-300 mt-1">tjc.org/es</div>
+            <div class="text-[10px] text-slate-400">América Latina & España</div>
+          </a>
+
+          <a href="https://tjc.org/fr" class="p-3 rounded-xl bg-white/5 border border-white/10 hover:border-blue-400 transition-colors block">
+            <div class="font-bold text-white">Français</div>
+            <div class="font-mono text-[11px] text-blue-300 mt-1">tjc.org/fr</div>
+            <div class="text-[10px] text-slate-400">France & Afrique</div>
+          </a>
+
+          <a href="https://tjc.org/de" class="p-3 rounded-xl bg-white/5 border border-white/10 hover:border-blue-400 transition-colors block">
+            <div class="font-bold text-white">Deutsch</div>
+            <div class="font-mono text-[11px] text-blue-300 mt-1">tjc.org/de</div>
+            <div class="text-[10px] text-slate-400">Deutschland & DACH</div>
+          </a>
+
+          <a href="https://tjc.org/ja" class="p-3 rounded-xl bg-white/5 border border-white/10 hover:border-blue-400 transition-colors block">
+            <div class="font-bold text-white">日本語 (Japanese)</div>
+            <div class="font-mono text-[11px] text-blue-300 mt-1">tjc.org/ja</div>
+            <div class="text-[10px] text-slate-400">日本真イエス教会</div>
+          </a>
+
+          <a href="https://tjc.org/ko" class="p-3 rounded-xl bg-white/5 border border-white/10 hover:border-blue-400 transition-colors block">
+            <div class="font-bold text-white">한국어 (Korean)</div>
+            <div class="font-mono text-[11px] text-blue-300 mt-1">tjc.org/ko</div>
+            <div class="text-[10px] text-slate-400">참예수교회 한국총회</div>
+          </a>
+
+          <a href="https://tjc.org/id" class="p-3 rounded-xl bg-white/5 border border-white/10 hover:border-blue-400 transition-colors block">
+            <div class="font-bold text-white">Bahasa Indonesia</div>
+            <div class="font-mono text-[11px] text-blue-300 mt-1">tjc.org/id</div>
+            <div class="text-[10px] text-slate-400">Gereja Yesus Sejati</div>
+          </a>
+
+          <a href="https://tjc.org/vi" class="p-3 rounded-xl bg-white/5 border border-white/10 hover:border-blue-400 transition-colors block">
+            <div class="font-bold text-white">Tiếng Việt</div>
+            <div class="font-mono text-[11px] text-blue-300 mt-1">tjc.org/vi</div>
+            <div class="text-[10px] text-slate-400">Hội Thánh Chân Chúa</div>
+          </a>
+
+          <a href="https://tjc.org/pt" class="p-3 rounded-xl bg-white/5 border border-white/10 hover:border-blue-400 transition-colors block">
+            <div class="font-bold text-white">Português</div>
+            <div class="font-mono text-[11px] text-blue-300 mt-1">tjc.org/pt</div>
+            <div class="text-[10px] text-slate-400">Brasil & Portugal</div>
+          </a>
+
+          <a href="https://tjc.org/ru" class="p-3 rounded-xl bg-white/5 border border-white/10 hover:border-blue-400 transition-colors block">
+            <div class="font-bold text-white">Русский</div>
+            <div class="font-mono text-[11px] text-blue-300 mt-1">tjc.org/ru</div>
+            <div class="text-[10px] text-slate-400">Истинная Церковь Иисуса</div>
+          </a>
+
+          <a href="https://tjc.org/th" class="p-3 rounded-xl bg-white/5 border border-white/10 hover:border-blue-400 transition-colors block">
+            <div class="font-bold text-white">ภาษาไทย (Thai)</div>
+            <div class="font-mono text-[11px] text-blue-300 mt-1">tjc.org/th</div>
+            <div class="text-[10px] text-slate-400">คริสตจักรเยซูแท้</div>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- Legal -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
+        <div>
+          Copyright © 2026 True Jesus Church. All rights reserved.
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="https://tjc.org/privacy-policy/" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="https://tjc.org/terms-of-use/" class="hover:text-white transition-colors">Terms of Service</a>
+          <a href="https://tjc.org/contact/" class="hover:text-white transition-colors">Contact Community Desk</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Interactivity Scripts -->
+  <script>
+    const mobileNavBtn = document.getElementById('mobileNavBtn');
+    const mobileNavDrawer = document.getElementById('mobileNavDrawer');
+    if (mobileNavBtn && mobileNavDrawer) {
+      mobileNavBtn.addEventListener('click', () => {
+        mobileNavDrawer.classList.toggle('hidden');
+      });
+    }
+  </script>
+</body>
+</html>
