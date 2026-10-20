@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>True Jesus Church | Media & Publications Journal (Option B: Editorial)</title>
-  <meta name="description" content="True Jesus Church international media portal featuring live Sabbath sermons, Manna Magazine theological articles, faith testimonies, and apostolic beliefs.">
+  <title>True Jesus Church | Media & Theological Journal (Option B: Editorial)</title>
+  <meta name="description" content="True Jesus Church international media portal and theological journal. Aligned with TJC Identity Guidelines (Pantone 288 C & 314 C). Featuring live Sabbath sermons, Manna Magazine doctrinal articles, and testimonies.">
+  <link rel="icon" type="image/png" href="../../assets/brand/TJC_Color Dove_Social Icon_200x200.png">
+  
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -12,65 +14,84 @@
       theme: {
         extend: {
           colors: {
-            journal: {
-              bg: '#F9F8F5',
-              card: '#FFFFFF',
-              dark: '#111827',
-              navy: '#0B192C',
-              slate: '#1E293B',
-              crimson: '#C23A22',
-              crimsonLight: '#FDECE9',
-              gold: '#C59B27',
-              border: '#E8E5DF',
-              muted: '#6B7280'
+            tjc: {
+              navy: '#23356F',       // Pantone 288 C (Official Theme Navy)
+              deep: '#192652',       // Deeper Navy
+              cyan: '#007DA4',       // Pantone 314 C (Official Theme Cyan)
+              cyanLight: '#E8F5F8',  // Cyan Highlight
+              cyanHover: '#006889',
+              gold: '#C5A059',       // Publication Gold Accent
+              goldLight: '#FBF7EE',
+              gray65: '#595959',     // 65K Tone
+              gray50: '#7F7F7F',
+              gray25: '#D1D5DB',
+              surface: '#FFFFFF',
+              canvas: '#F8FAFC',
+              border: '#E2E8F0'
             }
           },
           fontFamily: {
-            serif: ['"Newsreader"', 'Georgia', 'serif'],
-            sans: ['"Inter"', 'system-ui', 'sans-serif'],
-            display: ['"Fraunces"', 'serif']
+            sans: ['"Source Sans 3"', '"Source Sans Pro"', 'system-ui', 'sans-serif'],
+            serif: ['"Crimson Text"', 'Georgia', 'serif'],
+            display: ['"Playfair Display"', 'Georgia', 'serif']
           }
         }
       }
     }
   </script>
-  <!-- Google Fonts -->
+  
+  <!-- Google Fonts: Official TJC Identity Guidelines Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400;1,600&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
   <style>
     body {
-      font-family: 'Inter', sans-serif;
-      background-color: #F9F8F5;
-      color: #111827;
+      font-family: 'Source Sans 3', 'Source Sans Pro', sans-serif;
+      background-color: #FFFFFF;
+      color: #1E293B;
     }
-    .font-editorial {
-      font-family: 'Newsreader', Georgia, serif;
+    .font-serif-body {
+      font-family: 'Crimson Text', Georgia, serif;
     }
-    .font-display {
-      font-family: 'Fraunces', Georgia, serif;
+    .font-serif-headline {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+    /* Subtle scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F8FAFC;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #CBD5E1;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94A3B8;
     }
   </style>
 </head>
-<body class="min-h-screen flex flex-col antialiased selection:bg-journal-crimson selection:text-white">
+<body class="min-h-screen flex flex-col antialiased selection:bg-tjc-cyan/20 selection:text-tjc-navy">
 
-  <!-- Editorial Top Masthead Bar -->
-  <aside aria-label="Edition and Broadcast Bar" class="bg-journal-dark text-white text-xs py-2 px-4 border-b border-white/10">
+  <!-- EDITORIAL TOP MASTHEAD BAR (Pantone 288 C) -->
+  <aside aria-label="Edition and Broadcast Bar" class="bg-tjc-navy text-white text-xs py-2 px-4 border-b border-tjc-cyan/30">
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
       <div class="flex items-center gap-3">
-        <span class="text-journal-gold font-serif italic text-sm">International Edition</span>
+        <span class="text-cyan-200 font-serif italic text-sm">International Apostolic Edition</span>
         <span class="text-white/30">•</span>
-        <span class="text-white/80">Sabbath, October 24, 2026</span>
+        <span class="text-white/90">Sabbath, October 24, 2026</span>
         <span class="text-white/30 hidden sm:inline">•</span>
-        <span class="text-emerald-400 font-medium hidden sm:inline-flex items-center gap-1.5">
-          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-          Live Broadcast Active
+        <span class="text-cyan-300 font-semibold hidden sm:inline-flex items-center gap-1.5">
+          <span class="w-1.5 h-1.5 rounded-full bg-cyan-300 animate-pulse"></span>
+          Worldwide Livestream Active
         </span>
       </div>
-      <div class="flex items-center gap-4 text-white/70 text-[11px]">
-        <a href="#broadcast-lead" class="hover:text-journal-gold transition-colors">Today's Livestream</a>
-        <a href="#manna-feature" class="hover:text-journal-gold transition-colors">Manna Issue 114</a>
-        <a href="#language-directory" class="text-white font-medium hover:underline flex items-center gap-1">
+      <div class="flex items-center gap-4 text-white/80 text-[11px]">
+        <a href="#broadcast-lead" class="hover:text-cyan-200 transition-colors">Today's Livestream</a>
+        <a href="#manna-feature" class="hover:text-cyan-200 transition-colors">Manna Issue 114</a>
+        <a href="#language-directory" class="text-white font-semibold hover:underline flex items-center gap-1">
           <span>Global Sites (12)</span>
           <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
         </a>
@@ -78,54 +99,44 @@
     </div>
   </aside>
 
-  <!-- Editorial Masthead Header -->
-  <header class="sticky top-0 z-40 bg-[#F9F8F5]/95 backdrop-blur-md border-b border-journal-border">
+  <!-- EDITORIAL MASTHEAD HEADER WITH OFFICIAL TJC LOGOTYPE -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-tjc-border shadow-xs">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- Primary Nav & Branding Row -->
       <div class="h-20 flex items-center justify-between">
         
-        <!-- Brand Wordmark -->
-        <a href="index.html" class="flex items-center gap-3 group">
-          <div class="w-10 h-10 rounded-lg bg-journal-navy text-journal-gold flex items-center justify-center font-display font-bold text-lg shadow-sm border border-journal-gold/30 group-hover:scale-105 transition-transform">
-            TJC
-          </div>
-          <div>
-            <div class="font-display font-bold text-xl sm:text-2xl text-journal-navy tracking-tight group-hover:text-journal-crimson transition-colors">
-              TRUE JESUS CHURCH
-            </div>
-            <div class="text-[10px] font-semibold text-journal-muted tracking-[0.25em] uppercase">
-              International Media & Theological Journal
-            </div>
-          </div>
+        <!-- Brand Wordmark Lockup -->
+        <a href="index.html" class="flex items-center gap-3 group py-1" aria-label="True Jesus Church International Media">
+          <img src="../../assets/brand/tjc_logotype_english_color_300dpi.png" alt="True Jesus Church" class="h-10 sm:h-12 w-auto object-contain transition-transform group-hover:scale-[1.02]">
         </a>
 
-        <!-- Desktop Navigation Links -->
-        <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-stone-700">
-          <a href="#broadcast-lead" class="hover:text-journal-crimson transition-colors">Sermons & Live</a>
-          <a href="#manna-feature" class="hover:text-journal-crimson transition-colors">Manna Journal</a>
-          <a href="#beliefs-directory" class="hover:text-journal-crimson transition-colors">Basic Beliefs</a>
-          <a href="#testimonies" class="hover:text-journal-crimson transition-colors">Testimonies</a>
-          <a href="#church-finder" class="hover:text-journal-crimson transition-colors">Find a Church</a>
+        <!-- Desktop Navigation Links (Source Sans 3) -->
+        <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-700">
+          <a href="#broadcast-lead" class="hover:text-tjc-cyan transition-colors">Sermons & Live</a>
+          <a href="#manna-feature" class="hover:text-tjc-cyan transition-colors">Manna Journal</a>
+          <a href="#beliefs-directory" class="hover:text-tjc-cyan transition-colors">10 Basic Beliefs</a>
+          <a href="#testimonies" class="hover:text-tjc-cyan transition-colors">Faith Testimonies</a>
+          <a href="#church-finder" class="hover:text-tjc-cyan transition-colors">Find a Church</a>
         </nav>
 
         <!-- Right Side Actions -->
         <div class="hidden sm:flex items-center gap-3">
           <!-- Search Button -->
-          <button id="searchOpenBtn" class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-journal-border text-xs text-stone-600 hover:border-stone-400 transition-colors shadow-sm">
-            <svg class="w-3.5 h-3.5 text-stone-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          <button id="searchOpenBtn" class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-50 border border-slate-300 text-xs text-slate-700 hover:border-tjc-cyan transition-colors shadow-xs">
+            <svg class="w-3.5 h-3.5 text-tjc-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
             <span>Search Media Archive</span>
           </button>
 
-          <!-- Live Broadcast Badge CTA -->
-          <a href="#broadcast-lead" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-journal-crimson text-white text-xs font-semibold hover:bg-red-700 shadow-sm transition-all">
+          <!-- Live Broadcast Badge CTA (Pantone 314 C) -->
+          <a href="#broadcast-lead" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-tjc-cyan text-white text-xs font-bold hover:bg-tjc-cyanHover shadow-xs transition-all">
             <span class="w-2 h-2 rounded-full bg-white animate-ping"></span>
-            Watch Live Stream
+            Watch Livestream
           </a>
         </div>
 
         <!-- Mobile Menu Button -->
-        <button id="mobileToggle" class="lg:hidden p-2 text-stone-700 hover:text-journal-navy rounded-lg" aria-label="Toggle menu">
+        <button id="mobileToggle" class="lg:hidden p-2 text-slate-700 hover:text-tjc-navy rounded-lg" aria-label="Toggle menu">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
         </button>
 
@@ -133,14 +144,14 @@
     </div>
 
     <!-- Mobile Drawer -->
-    <div id="mobileDrawer" class="hidden lg:hidden bg-white border-b border-journal-border px-4 py-5 space-y-3">
-      <a href="#broadcast-lead" class="block py-2 text-base font-semibold text-journal-navy">Sermons & Live Broadcasts</a>
-      <a href="#manna-feature" class="block py-2 text-base font-semibold text-journal-navy">Manna Magazine Issue 114</a>
-      <a href="#beliefs-directory" class="block py-2 text-base font-semibold text-journal-navy">10 Basic Beliefs</a>
-      <a href="#testimonies" class="block py-2 text-base font-semibold text-journal-navy">Faith Testimonies</a>
-      <a href="#church-finder" class="block py-2 text-base font-semibold text-journal-navy">Global Church Locator</a>
-      <div class="pt-3 border-t border-stone-200">
-        <a href="#broadcast-lead" class="block w-full py-2.5 text-center bg-journal-crimson text-white text-sm font-semibold rounded-xl">
+    <div id="mobileDrawer" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 py-5 space-y-3">
+      <a href="#broadcast-lead" class="block py-2 text-base font-semibold text-tjc-navy">Sermons & Live Broadcasts</a>
+      <a href="#manna-feature" class="block py-2 text-base font-semibold text-tjc-navy">Manna Magazine Issue 114</a>
+      <a href="#beliefs-directory" class="block py-2 text-base font-semibold text-tjc-navy">10 Basic Beliefs</a>
+      <a href="#testimonies" class="block py-2 text-base font-semibold text-tjc-navy">Faith Testimonies</a>
+      <a href="#church-finder" class="block py-2 text-base font-semibold text-tjc-navy">Global Church Locator</a>
+      <div class="pt-3 border-t border-slate-200">
+        <a href="#broadcast-lead" class="block w-full py-2.5 text-center bg-tjc-cyan text-white text-sm font-bold rounded-xl">
           Watch Sabbath Livestream
         </a>
       </div>
@@ -148,22 +159,22 @@
   </header>
 
   <!-- Search Overlay Modal -->
-  <div id="searchModalBox" class="hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-start justify-center pt-24 px-4">
-    <div class="bg-white rounded-2xl max-w-xl w-full p-6 shadow-2xl border border-stone-200">
-      <div class="flex items-center justify-between pb-3 border-b border-stone-100">
-        <div class="font-display text-lg font-bold text-journal-navy">Search Media, Sermons & Articles</div>
-        <button id="searchCloseBtn" class="text-stone-400 hover:text-stone-600">
+  <div id="searchModalBox" class="hidden fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-start justify-center pt-24 px-4">
+    <div class="bg-white rounded-2xl max-w-xl w-full p-6 shadow-2xl border border-slate-200">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+        <div class="font-serif-headline text-lg font-bold text-tjc-navy">Search Media, Sermons & Articles</div>
+        <button id="searchCloseBtn" class="text-slate-400 hover:text-slate-600">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
         </button>
       </div>
       <div class="mt-4">
-        <input type="text" placeholder="Type keywords: e.g. Sabbath, Holy Spirit baptism, Footwashing, Elder Lin..." class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-journal-crimson text-sm">
+        <input type="text" placeholder="Type keywords: e.g. Sabbath, Holy Spirit baptism, Footwashing, Elder Lin..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-tjc-cyan text-sm">
       </div>
-      <div class="mt-4 flex flex-wrap gap-2 text-xs text-stone-500">
+      <div class="mt-4 flex flex-wrap gap-2 text-xs text-slate-600">
         <span class="self-center">Filters:</span>
-        <span class="px-2.5 py-1 bg-stone-100 rounded-md cursor-pointer hover:bg-stone-200 font-medium text-stone-700">Video Sermons</span>
-        <span class="px-2.5 py-1 bg-stone-100 rounded-md cursor-pointer hover:bg-stone-200 font-medium text-stone-700">Manna Articles</span>
-        <span class="px-2.5 py-1 bg-stone-100 rounded-md cursor-pointer hover:bg-stone-200 font-medium text-stone-700">Audio Hymns</span>
+        <span class="px-2.5 py-1 bg-slate-100 rounded-md cursor-pointer hover:bg-slate-200 font-semibold text-slate-800">Video Sermons</span>
+        <span class="px-2.5 py-1 bg-slate-100 rounded-md cursor-pointer hover:bg-slate-200 font-semibold text-slate-800">Manna Articles</span>
+        <span class="px-2.5 py-1 bg-slate-100 rounded-md cursor-pointer hover:bg-slate-200 font-semibold text-slate-800">Audio Hymns</span>
       </div>
     </div>
   </div>
@@ -174,12 +185,12 @@
     <section class="py-10 lg:py-14 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- Editorial Section Kicker -->
-      <div class="flex items-center justify-between pb-4 border-b-2 border-journal-dark mb-8">
+      <div class="flex items-center justify-between pb-4 border-b-2 border-tjc-navy mb-8">
         <div class="flex items-center gap-3">
-          <span class="w-3 h-3 bg-journal-crimson rounded-none rotate-45"></span>
-          <span class="font-display font-bold uppercase tracking-wider text-xs text-journal-navy">Featured Broadcast & Journal Issue</span>
+          <span class="w-3 h-3 bg-tjc-cyan rounded-none rotate-45"></span>
+          <span class="font-serif-headline font-bold uppercase tracking-wider text-xs text-tjc-navy">Featured Broadcast & Theological Journal</span>
         </div>
-        <div class="text-xs text-stone-500 font-mono">
+        <div class="text-xs text-slate-500 font-mono">
           Updated: Sabbath Morning Edition
         </div>
       </div>
@@ -188,160 +199,133 @@
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
         
         <!-- Left: Lead Broadcast Console (7 Cols) -->
-        <article id="broadcast-lead" class="lg:col-span-7 bg-white rounded-2xl border border-journal-border shadow-sm overflow-hidden flex flex-col">
+        <article id="broadcast-lead" class="lg:col-span-7 bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col">
           <!-- Video Simulation Frame -->
-          <div class="relative aspect-video w-full bg-journal-navy flex items-center justify-center group cursor-pointer overflow-hidden">
-            <div class="absolute inset-0 bg-cover bg-center opacity-40 mix-blend-overlay" style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100\' height=\'100\' viewBox=\'0 0 100 100\'><rect fill=\'%230B192C\' width=\'100\' height=\'100\'/><circle cx=\'50\' cy=\'50\' r=\'40\' stroke=\'%23ffffff\' stroke-width=\'1\' fill=\'none\' opacity=\'0.2\'/></svg>');"></div>
+          <div class="relative aspect-video w-full bg-tjc-navy flex items-center justify-center group cursor-pointer overflow-hidden">
+            <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image: radial-gradient(circle at center, #007DA4 0%, #23356F 70%, #0B1226 100%);"></div>
             
             <!-- Live Badge Overlay -->
             <div class="absolute top-4 left-4 z-10 flex items-center gap-2">
-              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-journal-crimson text-white text-[11px] font-bold tracking-wider uppercase shadow-md">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tjc-cyan text-white text-[11px] font-bold tracking-wider uppercase shadow-md">
                 <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
                 Worldwide Live Stream
               </span>
-              <span class="px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-sm text-white/90 text-[11px] font-medium">
-                Sabbath Worship
+              <span class="px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-sm text-white text-[10px] font-mono">
+                1080p HD
               </span>
             </div>
 
-            <!-- Active Viewers Badge -->
-            <div class="absolute top-4 right-4 z-10 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-sm text-white/90 text-[11px] flex items-center gap-1.5">
-              <svg class="w-3.5 h-3.5 text-red-400" fill="currentColor" viewBox="0 0 20 20"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg>
-              <span>4,180 watching</span>
+            <!-- Central Play / Live Indicator -->
+            <div class="text-center z-10 p-6">
+              <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-tjc-cyan text-white flex items-center justify-center mx-auto mb-3 shadow-xl group-hover:scale-105 transition-transform">
+                <svg class="w-8 h-8 sm:w-9 sm:h-9 translate-x-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6V4z"/></svg>
+              </div>
+              <span class="text-xs font-semibold text-cyan-200 tracking-wider uppercase">Sabbath Morning Service · Now Streaming</span>
             </div>
 
-            <!-- Central Play Action -->
-            <div class="relative z-10 text-center p-6">
-              <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-journal-crimson text-white flex items-center justify-center mx-auto shadow-2xl group-hover:scale-110 group-hover:bg-red-600 transition-all duration-300">
-                <svg class="w-8 h-8 fill-current ml-1" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            <!-- Audio Interpretation Selector Ribbon -->
+            <div class="absolute bottom-3 left-3 right-3 bg-slate-950/85 backdrop-blur-md p-2.5 rounded-xl border border-white/10 flex flex-wrap items-center justify-between gap-2 text-xs">
+              <div class="flex items-center gap-2 text-slate-300">
+                <svg class="w-4 h-4 text-cyan-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"/></svg>
+                <span class="text-[11px] text-white font-medium">Interpretation:</span>
               </div>
-              <div class="mt-4 font-editorial italic text-white/90 text-sm">
-                Click to begin playback with simultaneous multilingual audio
-              </div>
-            </div>
-
-            <!-- Video Player Controls Bar -->
-            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent p-4 flex items-center justify-between text-xs text-white/80">
-              <div class="flex items-center gap-3">
-                <button class="hover:text-white font-medium flex items-center gap-1">
-                  <svg class="w-4 h-4 text-journal-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/></svg>
-                  <span>Audio: English + Mandarin Feed</span>
-                </button>
-              </div>
-              <div class="flex items-center gap-4 text-[11px]">
-                <span class="bg-white/20 px-2 py-0.5 rounded">1080p 60fps</span>
-                <span>Subtitles Available</span>
+              <div class="flex items-center gap-1">
+                <button class="px-2.5 py-0.5 rounded bg-tjc-cyan text-white font-bold text-[11px]">English</button>
+                <button class="px-2.5 py-0.5 rounded bg-white/10 hover:bg-white/20 text-slate-200 text-[11px]">中文</button>
+                <button class="px-2.5 py-0.5 rounded bg-white/10 hover:bg-white/20 text-slate-200 text-[11px]">Español</button>
+                <button class="px-2.5 py-0.5 rounded bg-white/10 hover:bg-white/20 text-slate-200 text-[11px]">Français</button>
               </div>
             </div>
           </div>
 
-          <!-- Sermon Meta & Description -->
-          <div class="p-6 sm:p-8">
-            <div class="flex flex-wrap items-center gap-2 mb-3 text-xs">
-              <span class="px-2.5 py-0.5 rounded-full bg-journal-crimsonLight text-journal-crimson font-semibold">Sabbath Morning Message</span>
-              <span class="text-stone-400">•</span>
-              <span class="text-stone-600 font-medium">International Assembly Sanctuary</span>
-              <span class="text-stone-400">•</span>
-              <span class="text-stone-500">Passage: 1 Corinthians 12:1-13</span>
+          <!-- Video Metadata & Sermon Notes -->
+          <div class="p-6">
+            <div class="flex items-center gap-3 text-xs text-slate-500 mb-2">
+              <span class="px-2 py-0.5 rounded bg-tjc-cyanLight text-tjc-cyan font-bold">Sacrament Series</span>
+              <span>•</span>
+              <span>Sermon Duration: 55 mins</span>
+              <span>•</span>
+              <span>Speaker: Pr. Simon Yang (IA)</span>
+            </div>
+            <h2 class="font-serif-headline text-2xl sm:text-3xl font-bold text-tjc-navy leading-tight mb-3">
+              "The Restoration of Apostolic Truth in the Latter Rain"
+            </h2>
+            <p class="font-serif-body text-base sm:text-lg text-slate-700 leading-relaxed mb-4">
+              A comprehensive biblical exposition of the outpouring of the Holy Spirit, examining the prophecies of Joel, the apostolic commission in Acts, and the necessity of keeping God's commandments in truth.
+            </p>
+            <div class="pt-4 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3 text-xs">
+              <div class="flex items-center gap-2">
+                <span class="font-semibold text-slate-700">Scripture Passages:</span>
+                <span class="font-serif-body italic text-slate-600 text-sm">Joel 2:23–29 · Acts 2:1–4 · Rev 14:6–7</span>
+              </div>
+              <a href="https://tjc.org/sermons/" target="_blank" class="text-tjc-cyan hover:underline font-bold inline-flex items-center gap-1">
+                Download Sermon Notes & PDF &rarr;
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Right: Manna Magazine Spotlight (5 Cols) -->
+        <article id="manna-feature" class="lg:col-span-5 bg-slate-50 rounded-2xl border border-slate-200 p-6 sm:p-7 flex flex-col justify-between shadow-xs">
+          <div>
+            <div class="flex items-center justify-between pb-3 border-b border-slate-200 mb-5">
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-bold text-tjc-cyan uppercase tracking-widest">Quarterly Publication</span>
+              </div>
+              <span class="text-xs font-mono font-bold text-slate-600">Issue 114</span>
             </div>
 
-            <h1 class="font-display font-bold text-2xl sm:text-3xl text-journal-navy leading-snug mb-3">
-              The Manifestation of the Spirit: Spiritual Gifts for Edification
-            </h1>
-
-            <p class="text-sm text-stone-600 leading-relaxed font-light mb-6">
-              In this Sabbath exposition, we examine how the baptism of the Holy Spirit empowers believers and maintains the unity of the church. Learn why speaking in unknown tongues serves as biblical confirmation of the Holy Spirit.
-            </p>
-
-            <div class="flex flex-wrap items-center justify-between gap-4 pt-6 border-t border-stone-100 text-xs">
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-full bg-stone-200 flex items-center justify-center font-bold text-stone-600">
-                  JL
+            <!-- Magazine Cover & Title Lockup -->
+            <div class="flex gap-5 mb-5 items-start">
+              <div class="w-28 sm:w-32 h-40 sm:h-44 rounded-lg bg-tjc-navy text-white p-3 shadow-md flex-shrink-0 flex flex-col justify-between border border-tjc-cyan/30">
+                <div>
+                  <div class="text-[8px] font-bold uppercase tracking-widest text-cyan-300">True Jesus Church</div>
+                  <div class="font-serif-headline text-lg font-bold mt-1">MANNA</div>
+                  <div class="text-[8px] text-slate-300">Spring 2026</div>
                 </div>
                 <div>
-                  <div class="font-bold text-journal-navy">Elder John Lin</div>
-                  <div class="text-[11px] text-stone-500">Department of World Evangelism</div>
+                  <div class="text-[10px] font-bold text-white leading-tight">The Sabbath Rest</div>
+                  <div class="text-[8px] text-slate-400 mt-1">Issue 114</div>
                 </div>
               </div>
+              <div>
+                <span class="inline-block px-2 py-0.5 rounded bg-blue-100 text-tjc-navy text-[11px] font-bold mb-1.5">Cover Feature</span>
+                <h3 class="font-serif-headline text-xl sm:text-2xl font-bold text-tjc-navy leading-snug">
+                  The Sabbath: Eternal Sanctuary in Time
+                </h3>
+                <p class="font-serif-body text-sm text-slate-600 leading-relaxed mt-2">
+                  "For six days work may be done, but the seventh day is the Sabbath of rest, holy to the Lord." Exploring the creation covenant and spiritual blessings.
+                </p>
+                <div class="mt-3 text-xs text-slate-500 font-medium">By Department of Literary Ministry (DELM)</div>
+              </div>
+            </div>
 
-              <div class="flex items-center gap-2">
-                <button class="px-3.5 py-2 rounded-lg bg-stone-100 hover:bg-stone-200 text-stone-700 font-medium transition-colors flex items-center gap-1.5">
-                  <svg class="w-4 h-4 text-stone-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-                  <span>Sermon Notes (PDF)</span>
-                </button>
-                <button class="px-3.5 py-2 rounded-lg bg-journal-navy hover:bg-slate-800 text-white font-medium transition-colors flex items-center gap-1.5">
-                  <svg class="w-4 h-4 text-journal-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
-                  <span>Share Broadcast</span>
-                </button>
+            <!-- Table of Contents Highlights -->
+            <div class="space-y-3 pt-4 border-t border-slate-200 text-xs">
+              <div class="font-bold uppercase tracking-wider text-slate-500 text-[10px]">Also in this issue:</div>
+              <div class="flex items-start justify-between gap-3 group cursor-pointer">
+                <div>
+                  <span class="font-bold text-slate-800 group-hover:text-tjc-cyan transition-colors">1. The Spiritual Significance of Footwashing</span>
+                  <p class="text-[11px] text-slate-500 mt-0.5">Humility, forgiveness, and mutual love in the body of Christ.</p>
+                </div>
+                <span class="font-mono text-slate-400 text-[11px]">p. 14</span>
+              </div>
+              <div class="flex items-start justify-between gap-3 group cursor-pointer">
+                <div>
+                  <span class="font-bold text-slate-800 group-hover:text-tjc-cyan transition-colors">2. Testimonies: Delivered from the Shadow of Death</span>
+                  <p class="text-[11px] text-slate-500 mt-0.5">Miraculous healing through kneeling prayer in Kota Kinabalu.</p>
+                </div>
+                <span class="font-mono text-slate-400 text-[11px]">p. 28</span>
               </div>
             </div>
           </div>
-        </article>
 
-        <!-- Right: Manna Magazine Editorial Spotlight (5 Cols) -->
-        <article id="manna-feature" class="lg:col-span-5 bg-white rounded-2xl border border-journal-border shadow-sm p-6 sm:p-8 flex flex-col justify-between">
-          <div>
-            <!-- Issue Pill & Date -->
-            <div class="flex items-center justify-between pb-4 border-b border-stone-100 mb-6">
-              <span class="inline-block px-3 py-1 rounded-full bg-journal-gold/15 text-journal-gold text-xs font-bold uppercase tracking-wider">
-                Manna Magazine · Issue 114
-              </span>
-              <span class="text-xs text-stone-400 font-mono">Quarterly Print & Digital</span>
-            </div>
-
-            <!-- Cover Visual Simulation -->
-            <div class="bg-gradient-to-br from-journal-navy via-slate-900 to-stone-900 rounded-xl p-6 text-white mb-6 shadow-md relative overflow-hidden">
-              <div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-journal-gold/20 blur-2xl pointer-events-none"></div>
-              <div class="text-[10px] font-bold text-journal-gold uppercase tracking-[0.2em] mb-1">Theme Article</div>
-              <div class="font-editorial text-2xl sm:text-3xl font-bold leading-tight mb-2">
-                "The Holy Sabbath: God’s Sanctuary in Time"
-              </div>
-              <div class="text-xs text-stone-300 font-light leading-relaxed mb-4">
-                Why God sanctified the seventh day at Creation, observed it in the wilderness, affirmed it through Jesus Christ, and preserved it for eternity.
-              </div>
-              <div class="flex items-center justify-between text-[11px] text-stone-400 pt-3 border-t border-white/10">
-                <span>By Dr. E. Tseng · IA Literary Dept.</span>
-                <span class="text-amber-300 font-medium">8 min read</span>
-              </div>
-            </div>
-
-            <!-- Magazine Table of Contents Preview -->
-            <h3 class="text-xs font-bold uppercase tracking-wider text-stone-400 mb-3">In This Edition</h3>
-            <ul class="space-y-3 text-xs divide-y divide-stone-100">
-              <li class="pt-2">
-                <a href="https://tjc.org/manna/" class="group block">
-                  <div class="font-semibold text-journal-navy group-hover:text-journal-crimson transition-colors">
-                    Water Baptism & Remission of Sins: The Biblical Mode
-                  </div>
-                  <div class="text-stone-500 font-light text-[11px] mt-0.5">Theological Examination · 6 min read</div>
-                </a>
-              </li>
-              <li class="pt-2">
-                <a href="https://tjc.org/manna/" class="group block">
-                  <div class="font-semibold text-journal-navy group-hover:text-journal-crimson transition-colors">
-                    Miracle in Manila: Healing from Terminal Leukemia
-                  </div>
-                  <div class="text-stone-500 font-light text-[11px] mt-0.5">Personal Faith Testimony · 5 min read</div>
-                </a>
-              </li>
-              <li class="pt-2">
-                <a href="https://tjc.org/manna/" class="group block">
-                  <div class="font-semibold text-journal-navy group-hover:text-journal-crimson transition-colors">
-                    Guiding the Next Generation in Apostolic Fellowship
-                  </div>
-                  <div class="text-stone-500 font-light text-[11px] mt-0.5">Youth & Family Ministry · 7 min read</div>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Publication Actions -->
-          <div class="pt-6 border-t border-stone-100 flex flex-col sm:flex-row gap-3">
-            <a href="https://tjc.org/manna/" class="w-full text-center py-2.5 rounded-xl bg-journal-navy text-white text-xs font-semibold hover:bg-slate-800 transition-colors">
-              Read Digital Edition Online
+          <div class="pt-6 mt-6 border-t border-slate-200 flex items-center justify-between gap-3">
+            <a href="https://tjc.org/manna/" target="_blank" class="px-5 py-2.5 rounded-full bg-tjc-navy text-white text-xs font-bold hover:bg-tjc-deep transition-colors shadow-xs">
+              Read Online Free
             </a>
-            <a href="https://tjc.org/manna-pdf/" class="w-full text-center py-2.5 rounded-xl border border-stone-300 text-stone-700 text-xs font-medium hover:bg-stone-50 transition-colors">
-              Download PDF (14 MB)
+            <a href="https://tjc.org/manna-archive/" target="_blank" class="text-xs font-bold text-tjc-cyan hover:underline">
+              Browse 30-Year Archive &rarr;
             </a>
           </div>
         </article>
@@ -349,96 +333,85 @@
       </div>
     </section>
 
-    <!-- SECTION: CATEGORY-FILTERED SERMON ARCHIVE & MEDIA CONSOLE -->
-    <section class="py-14 bg-white border-y border-journal-border">
+    <!-- SECTION: CATEGORIZED SERMON & MEDIA ARCHIVE -->
+    <section class="py-14 bg-slate-50 border-t border-slate-200">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 pb-4 border-b border-stone-200">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 pb-4 border-b border-slate-200">
           <div>
-            <div class="text-xs font-bold uppercase tracking-wider text-journal-crimson mb-1">Archived Teachings</div>
-            <h2 class="font-display font-bold text-2xl sm:text-3xl text-journal-navy">Media Library & Audio Feeds</h2>
+            <span class="text-xs font-bold text-tjc-cyan uppercase tracking-widest">Digital Sermon Vault</span>
+            <h2 class="font-serif-headline text-3xl font-bold text-tjc-navy mt-1">Recent Teachings & Studies</h2>
           </div>
-          <!-- Filter tabs -->
-          <div class="flex flex-wrap gap-2 mt-4 md:mt-0 text-xs font-medium">
-            <button class="px-3.5 py-1.5 rounded-full bg-journal-navy text-white">All Recordings</button>
-            <button class="px-3.5 py-1.5 rounded-full bg-stone-100 text-stone-700 hover:bg-stone-200">Sabbath Sermons</button>
-            <button class="px-3.5 py-1.5 rounded-full bg-stone-100 text-stone-700 hover:bg-stone-200">Sacraments</button>
-            <button class="px-3.5 py-1.5 rounded-full bg-stone-100 text-stone-700 hover:bg-stone-200">eRhema Audio</button>
-            <button class="px-3.5 py-1.5 rounded-full bg-stone-100 text-stone-700 hover:bg-stone-200">Youth Sermons</button>
+          <div class="flex items-center gap-2 mt-4 sm:mt-0 text-xs">
+            <button class="px-3 py-1.5 rounded-full bg-tjc-navy text-white font-bold">All Categories</button>
+            <button class="px-3 py-1.5 rounded-full bg-white border border-slate-300 text-slate-700 hover:border-tjc-cyan">Basic Beliefs</button>
+            <button class="px-3 py-1.5 rounded-full bg-white border border-slate-300 text-slate-700 hover:border-tjc-cyan">Sabbath Sermons</button>
+            <button class="px-3 py-1.5 rounded-full bg-white border border-slate-300 text-slate-700 hover:border-tjc-cyan">Youth Fellowship</button>
           </div>
         </div>
 
-        <!-- 3-Card Media Grid -->
+        <!-- 3-Column Video / Audio Cards -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           
-          <!-- Media Item 1 -->
-          <div class="group bg-[#F9F8F5] rounded-xl border border-stone-200 overflow-hidden hover:shadow-lg transition-all">
-            <div class="aspect-video bg-stone-800 relative flex items-center justify-center text-white">
-              <div class="w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-transform">
-                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6V4z"/></svg>
+          <!-- Card 1 -->
+          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xs hover:border-tjc-cyan transition-all">
+            <div class="aspect-video bg-tjc-navy relative flex items-center justify-center">
+              <div class="w-12 h-12 rounded-full bg-white/20 text-white flex items-center justify-center hover:scale-110 transition-transform cursor-pointer">
+                <svg class="w-6 h-6 translate-x-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6V4z"/></svg>
               </div>
-              <span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-black/70 text-[10px] font-mono">48:15</span>
-              <span class="absolute top-2 left-2 px-2 py-0.5 rounded bg-journal-navy text-[10px] font-semibold text-journal-gold">Video</span>
+              <span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-black/70 text-white text-[10px] font-mono">48:12</span>
             </div>
             <div class="p-5">
-              <div class="text-[11px] text-stone-500 font-mono mb-1">Preached Oct 17, 2026</div>
-              <h3 class="font-display font-bold text-base text-journal-navy group-hover:text-journal-crimson transition-colors mb-2">
-                The Footwashing Sacrament: Fellowship and Sanctification
-              </h3>
-              <p class="text-xs text-stone-600 line-clamp-2 font-light mb-4">
-                An exhaustive examination of John 13: how footwashing establishes spiritual communion with Christ and fosters unfeigned love among brethren.
+              <span class="text-[10px] font-bold text-tjc-cyan uppercase tracking-wider">Doctrinal Study</span>
+              <h3 class="font-serif-headline text-lg font-bold text-tjc-navy mt-1 mb-2">The Baptism of the Holy Spirit</h3>
+              <p class="font-serif-body text-sm text-slate-600 line-clamp-2">
+                Examining the promise of the Holy Spirit as prophesied in scripture and evidenced by speaking in tongues.
               </p>
-              <div class="flex items-center justify-between text-xs font-semibold text-journal-navy">
-                <span>Elder P. Wu</span>
-                <span class="text-journal-crimson group-hover:underline">Watch &rarr;</span>
+              <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                <span>Pr. Daniel Kuo</span>
+                <span>Oct 17, 2026</span>
               </div>
             </div>
           </div>
 
-          <!-- Media Item 2 -->
-          <div class="group bg-[#F9F8F5] rounded-xl border border-stone-200 overflow-hidden hover:shadow-lg transition-all">
-            <div class="aspect-video bg-stone-800 relative flex items-center justify-center text-white">
-              <div class="w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-transform">
-                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6V4z"/></svg>
+          <!-- Card 2 -->
+          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xs hover:border-tjc-cyan transition-all">
+            <div class="aspect-video bg-slate-900 relative flex items-center justify-center">
+              <div class="w-12 h-12 rounded-full bg-white/20 text-white flex items-center justify-center hover:scale-110 transition-transform cursor-pointer">
+                <svg class="w-6 h-6 translate-x-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6V4z"/></svg>
               </div>
-              <span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-black/70 text-[10px] font-mono">35:40</span>
-              <span class="absolute top-2 left-2 px-2 py-0.5 rounded bg-journal-navy text-[10px] font-semibold text-journal-gold">Audio Only</span>
+              <span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-black/70 text-white text-[10px] font-mono">52:40</span>
             </div>
             <div class="p-5">
-              <div class="text-[11px] text-stone-500 font-mono mb-1">Preached Oct 10, 2026</div>
-              <h3 class="font-display font-bold text-base text-journal-navy group-hover:text-journal-crimson transition-colors mb-2">
-                Prayer in the Holy Spirit: Groanings That Cannot Be Uttered
-              </h3>
-              <p class="text-xs text-stone-600 line-clamp-2 font-light mb-4">
-                Understanding Romans 8:26-27: How praying in unknown tongues builds up personal faith and intercedes according to God's will.
+              <span class="text-[10px] font-bold text-tjc-cyan uppercase tracking-wider">Sacrament Series</span>
+              <h3 class="font-serif-headline text-lg font-bold text-tjc-navy mt-1 mb-2">Water Baptism for Remission of Sins</h3>
+              <p class="font-serif-body text-sm text-slate-600 line-clamp-2">
+                The biblical mode of baptism: immersion in living water with head bowed in the name of the Lord Jesus Christ.
               </p>
-              <div class="flex items-center justify-between text-xs font-semibold text-journal-navy">
-                <span>Pr. M. Shek</span>
-                <span class="text-journal-crimson group-hover:underline">Listen &rarr;</span>
+              <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                <span>Pr. Timothy Yeung</span>
+                <span>Oct 10, 2026</span>
               </div>
             </div>
           </div>
 
-          <!-- Media Item 3 -->
-          <div class="group bg-[#F9F8F5] rounded-xl border border-stone-200 overflow-hidden hover:shadow-lg transition-all">
-            <div class="aspect-video bg-stone-800 relative flex items-center justify-center text-white">
-              <div class="w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-transform">
-                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6V4z"/></svg>
+          <!-- Card 3 -->
+          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xs hover:border-tjc-cyan transition-all">
+            <div class="aspect-video bg-tjc-navy relative flex items-center justify-center">
+              <div class="w-12 h-12 rounded-full bg-white/20 text-white flex items-center justify-center hover:scale-110 transition-transform cursor-pointer">
+                <svg class="w-6 h-6 translate-x-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6V4z"/></svg>
               </div>
-              <span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-black/70 text-[10px] font-mono">51:02</span>
-              <span class="absolute top-2 left-2 px-2 py-0.5 rounded bg-journal-navy text-[10px] font-semibold text-journal-gold">Video</span>
+              <span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-black/70 text-white text-[10px] font-mono">41:05</span>
             </div>
             <div class="p-5">
-              <div class="text-[11px] text-stone-500 font-mono mb-1">Preached Oct 03, 2026</div>
-              <h3 class="font-display font-bold text-base text-journal-navy group-hover:text-journal-crimson transition-colors mb-2">
-                The True Church in the End Times: The Latter Rain
-              </h3>
-              <p class="text-xs text-stone-600 line-clamp-2 font-light mb-4">
-                Fulfillment of biblical prophecies regarding the restoration of the apostolic church before Christ's second coming.
+              <span class="text-[10px] font-bold text-tjc-cyan uppercase tracking-wider">Christian Life</span>
+              <h3 class="font-serif-headline text-lg font-bold text-tjc-navy mt-1 mb-2">Praying in the Holy Spirit</h3>
+              <p class="font-serif-body text-sm text-slate-600 line-clamp-2">
+                How kneeling prayer and the guidance of the Spirit provide comfort, spiritual power, and discernment.
               </p>
-              <div class="flex items-center justify-between text-xs font-semibold text-journal-navy">
-                <span>Deacon K. Wong</span>
-                <span class="text-journal-crimson group-hover:underline">Watch &rarr;</span>
+              <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                <span>Eld. Mark Chen</span>
+                <span>Oct 3, 2026</span>
               </div>
             </div>
           </div>
@@ -448,173 +421,149 @@
       </div>
     </section>
 
-    <!-- SECTION: VOICES OF FAITH / TESTIMONY SPOTLIGHT -->
-    <section id="testimonies" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="text-center max-w-2xl mx-auto mb-12">
-        <span class="text-xs font-bold uppercase tracking-widest text-journal-crimson">Witness of the Spirit</span>
-        <h2 class="font-display font-bold text-3xl sm:text-4xl text-journal-navy mt-1">Faith & Healing Testimonies</h2>
-        <p class="text-sm text-stone-600 font-light mt-2">
-          Real accounts from members worldwide witnessing God's miraculous power, healing of illness, and peace through the Holy Spirit.
-        </p>
+    <!-- SECTION: BASIC BELIEFS DIRECTORY (Crimson Text Doctrinal Summaries) -->
+    <section id="beliefs-directory" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between pb-4 border-b-2 border-tjc-navy mb-8">
+        <div>
+          <span class="text-xs font-bold text-tjc-cyan uppercase tracking-widest">Apostolic Confession</span>
+          <h2 class="font-serif-headline text-3xl font-bold text-tjc-navy mt-1">The 10 Basic Beliefs</h2>
+        </div>
+        <a href="https://tjc.org/about/basic-beliefs/" target="_blank" class="text-xs font-bold text-tjc-cyan hover:underline hidden sm:inline">
+          Read Full Doctrinal Treatise &rarr;
+        </a>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        
-        <!-- Testimony Card 1 -->
-        <div class="bg-white p-7 rounded-2xl border border-journal-border shadow-sm flex flex-col justify-between">
-          <div>
-            <div class="text-journal-crimson mb-4">
-              <svg class="w-8 h-8 opacity-40" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-8.983z"/></svg>
-            </div>
-            <blockquote class="font-editorial text-base sm:text-lg text-stone-800 italic leading-relaxed mb-4">
-              "When the church elders laid hands on me in kneeling prayer, a warmth filled my chest and my tongue began to speak words given by the Holy Spirit. That evening, years of anxiety melted away."
-            </blockquote>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="p-6 rounded-xl border border-slate-200 bg-white shadow-xs">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-serif-headline text-lg font-bold text-tjc-navy">1. Jesus the One True God</span>
+            <span class="text-xs text-tjc-cyan font-bold font-mono">1 Tim 3:16</span>
           </div>
-          <div class="pt-4 border-t border-stone-100 flex items-center justify-between text-xs">
-            <div>
-              <div class="font-bold text-journal-navy">Sister Elizabeth Davies</div>
-              <div class="text-stone-400">London, United Kingdom</div>
-            </div>
-            <span class="px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 font-medium text-[11px]">Holy Spirit</span>
-          </div>
-        </div>
-
-        <!-- Testimony Card 2 -->
-        <div class="bg-white p-7 rounded-2xl border border-journal-border shadow-sm flex flex-col justify-between">
-          <div>
-            <div class="text-journal-crimson mb-4">
-              <svg class="w-8 h-8 opacity-40" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-8.983z"/></svg>
-            </div>
-            <blockquote class="font-editorial text-base sm:text-lg text-stone-800 italic leading-relaxed mb-4">
-              "Doctors had informed our family that surgery was impossible. We fasted and prayed through two Sabbaths. At the subsequent CT scan, the tumor had vanished without medical intervention."
-            </blockquote>
-          </div>
-          <div class="pt-4 border-t border-stone-100 flex items-center justify-between text-xs">
-            <div>
-              <div class="font-bold text-journal-navy">Brother Michael Chang</div>
-              <div class="text-stone-400">San Jose, California</div>
-            </div>
-            <span class="px-2 py-0.5 rounded bg-blue-50 text-blue-700 font-medium text-[11px]">Divine Healing</span>
-          </div>
-        </div>
-
-        <!-- Testimony Card 3 -->
-        <div class="bg-white p-7 rounded-2xl border border-journal-border shadow-sm flex flex-col justify-between">
-          <div>
-            <div class="text-journal-crimson mb-4">
-              <svg class="w-8 h-8 opacity-40" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-8.983z"/></svg>
-            </div>
-            <blockquote class="font-editorial text-base sm:text-lg text-stone-800 italic leading-relaxed mb-4">
-              "I had attended various churches for twenty years searching for biblical clarity on baptism and the Sabbath. When I stepped into TJC and heard the scripture opened, I knew I had arrived home."
-            </blockquote>
-          </div>
-          <div class="pt-4 border-t border-stone-100 flex items-center justify-between text-xs">
-            <div>
-              <div class="font-bold text-journal-navy">Sister Grace Osei</div>
-              <div class="text-stone-400">Accra, Ghana</div>
-            </div>
-            <span class="px-2 py-0.5 rounded bg-amber-50 text-amber-800 font-medium text-[11px]">Truth Found</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- SECTION: THE 10 BASIC BELIEFS EDITORIAL MATRIX -->
-    <section id="beliefs-directory" class="py-16 bg-journal-slate text-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="max-w-2xl mb-12">
-          <span class="text-xs font-bold uppercase tracking-widest text-journal-gold">Apostolic Foundations</span>
-          <h2 class="font-display font-bold text-3xl sm:text-4xl text-white mt-1">The 10 Basic Beliefs of the True Jesus Church</h2>
-          <p class="text-sm text-stone-300 font-light mt-2">
-            Every doctrine preached by the True Jesus Church is firmly grounded in the inspired Word of God.
+          <p class="font-serif-body text-base text-slate-700 leading-relaxed">
+            Jesus Christ, the Word who became flesh, died on the cross for the redemption of sinners, was resurrected on the third day, and ascended to heaven. He is the only Savior, Creator of heaven and earth, and the only true God.
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-xs">
-          
-          <div class="p-6 rounded-xl bg-white/5 border border-white/10 hover:border-journal-gold/40 transition-colors">
-            <div class="text-journal-gold font-mono font-bold text-sm mb-1">01</div>
-            <h3 class="font-display font-bold text-base text-white mb-2">Jesus the One True God</h3>
-            <p class="text-stone-300 font-light leading-relaxed mb-3">The Word who became flesh, died for redemption, resurrected, and ascended. He is the Creator and only Savior.</p>
-            <span class="text-journal-gold font-mono text-[11px]">1 Tim 3:16 · Col 2:9</span>
+        <div class="p-6 rounded-xl border border-slate-200 bg-white shadow-xs">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-serif-headline text-lg font-bold text-tjc-navy">2. The Holy Bible</span>
+            <span class="text-xs text-tjc-cyan font-bold font-mono">2 Tim 3:16</span>
           </div>
-
-          <div class="p-6 rounded-xl bg-white/5 border border-white/10 hover:border-journal-gold/40 transition-colors">
-            <div class="text-journal-gold font-mono font-bold text-sm mb-1">02</div>
-            <h3 class="font-display font-bold text-base text-white mb-2">The Holy Bible</h3>
-            <p class="text-stone-300 font-light leading-relaxed mb-3">The Old and New Testaments, inspired by God, the only written truth, and the authoritative standard for Christian life.</p>
-            <span class="text-journal-gold font-mono text-[11px]">2 Tim 3:16 · 2 Pet 1:21</span>
-          </div>
-
-          <div class="p-6 rounded-xl bg-white/5 border border-white/10 hover:border-journal-gold/40 transition-colors">
-            <div class="text-journal-gold font-mono font-bold text-sm mb-1">03</div>
-            <h3 class="font-display font-bold text-base text-white mb-2">Salvation by Grace</h3>
-            <p class="text-stone-300 font-light leading-relaxed mb-3">Salvation is given by the grace of God through faith. Believers must rely on the Holy Spirit to pursue holiness and obedience.</p>
-            <span class="text-journal-gold font-mono text-[11px]">Eph 2:8 · Titus 3:5</span>
-          </div>
-
-          <div class="p-6 rounded-xl bg-white/5 border border-white/10 hover:border-journal-gold/40 transition-colors">
-            <div class="text-journal-gold font-mono font-bold text-sm mb-1">04</div>
-            <h3 class="font-display font-bold text-base text-white mb-2">Holy Spirit Baptism</h3>
-            <p class="text-stone-300 font-light leading-relaxed mb-3">Receiving the promised Holy Spirit is evidenced by speaking in tongues, guaranteeing our heavenly inheritance.</p>
-            <span class="text-journal-gold font-mono text-[11px]">Acts 2:4 · Rom 8:16</span>
-          </div>
-
-          <div class="p-6 rounded-xl bg-white/5 border border-white/10 hover:border-journal-gold/40 transition-colors">
-            <div class="text-journal-gold font-mono font-bold text-sm mb-1">05</div>
-            <h3 class="font-display font-bold text-base text-white mb-2">Water Baptism</h3>
-            <p class="text-stone-300 font-light leading-relaxed mb-3">Sacrament for remission of sins and regeneration, performed in living water with head bowed, in the Lord Jesus' name.</p>
-            <span class="text-journal-gold font-mono text-[11px]">Acts 2:38 · John 3:5</span>
-          </div>
-
-          <div class="p-6 rounded-xl bg-white/5 border border-white/10 hover:border-journal-gold/40 transition-colors">
-            <div class="text-journal-gold font-mono font-bold text-sm mb-1">06</div>
-            <h3 class="font-display font-bold text-base text-white mb-2">Footwashing</h3>
-            <p class="text-stone-300 font-light leading-relaxed mb-3">Sacrament enabling fellowship with the Lord, teaching mutual love, holiness, humility, service, and forgiveness.</p>
-            <span class="text-journal-gold font-mono text-[11px]">John 13:1-17</span>
-          </div>
-
-          <div class="p-6 rounded-xl bg-white/5 border border-white/10 hover:border-journal-gold/40 transition-colors">
-            <div class="text-journal-gold font-mono font-bold text-sm mb-1">07</div>
-            <h3 class="font-display font-bold text-base text-white mb-2">Holy Communion</h3>
-            <p class="text-stone-300 font-light leading-relaxed mb-3">Sacrament commemorating the death of the Lord Jesus with one unleavened bread and grape juice, having eternal life.</p>
-            <span class="text-journal-gold font-mono text-[11px]">1 Cor 10:16 · John 6:53</span>
-          </div>
-
-          <div class="p-6 rounded-xl bg-white/5 border border-white/10 hover:border-journal-gold/40 transition-colors">
-            <div class="text-journal-gold font-mono font-bold text-sm mb-1">08</div>
-            <h3 class="font-display font-bold text-base text-white mb-2">The Sabbath Day</h3>
-            <p class="text-stone-300 font-light leading-relaxed mb-3">The 7th day of the week (Saturday) is a holy day blessed and sanctified by God, kept in grace to commemorate creation and salvation.</p>
-            <span class="text-journal-gold font-mono text-[11px]">Exod 20:8 · Luke 4:16</span>
-          </div>
-
-          <div class="p-6 rounded-xl bg-white/5 border border-white/10 hover:border-journal-gold/40 transition-colors">
-            <div class="text-journal-gold font-mono font-bold text-sm mb-1">09 & 10</div>
-            <h3 class="font-display font-bold text-base text-white mb-2">The Church & Second Coming</h3>
-            <p class="text-stone-300 font-light leading-relaxed mb-3">The true church restored in the latter rain; Christ will descend on the Last Day to judge the world and give eternal life.</p>
-            <span class="text-journal-gold font-mono text-[11px]">Joel 2:23 · 1 Thess 4:16</span>
-          </div>
-
+          <p class="font-serif-body text-base text-slate-700 leading-relaxed">
+            The Holy Bible, consisting of Old and New Testaments, is inspired by God, the only written truth, and the authoritative standard for Christian life and doctrine.
+          </p>
         </div>
 
+        <div class="p-6 rounded-xl border border-slate-200 bg-white shadow-xs">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-serif-headline text-lg font-bold text-tjc-navy">3. Complete Salvation</span>
+            <span class="text-xs text-tjc-cyan font-bold font-mono">Eph 2:8</span>
+          </div>
+          <p class="font-serif-body text-base text-slate-700 leading-relaxed">
+            Salvation is given by the grace of God through faith. Believers must rely on the Holy Spirit to pursue holiness, honor God, and love one another.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-xl border border-slate-200 bg-white shadow-xs">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-serif-headline text-lg font-bold text-tjc-navy">4. Holy Spirit Baptism</span>
+            <span class="text-xs text-tjc-cyan font-bold font-mono">Acts 2:4</span>
+          </div>
+          <p class="font-serif-body text-base text-slate-700 leading-relaxed">
+            Receiving the promised Holy Spirit, evidenced by speaking in unknown tongues, is the guarantee of our inheritance in the Kingdom of Heaven.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-xl border border-slate-200 bg-white shadow-xs">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-serif-headline text-lg font-bold text-tjc-navy">5. Water Baptism</span>
+            <span class="text-xs text-tjc-cyan font-bold font-mono">John 3:5</span>
+          </div>
+          <p class="font-serif-body text-base text-slate-700 leading-relaxed">
+            Water baptism is the sacrament for the remission of sins and regeneration. Administered in living water with head bowed, in the name of the Lord Jesus Christ.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-xl border border-slate-200 bg-white shadow-xs">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-serif-headline text-lg font-bold text-tjc-navy">6. Footwashing</span>
+            <span class="text-xs text-tjc-cyan font-bold font-mono">John 13:8</span>
+          </div>
+          <p class="font-serif-body text-base text-slate-700 leading-relaxed">
+            The sacrament of footwashing enables one to have a part with the Lord Jesus, and teaches love, holiness, humility, forgiveness, and mutual service.
+          </p>
+        </div>
       </div>
     </section>
 
-    <!-- SECTION: CHURCH LOCATOR TEASER -->
-    <section id="church-finder" class="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <div class="bg-white p-8 sm:p-10 rounded-2xl border border-journal-border shadow-sm">
-        <span class="text-xs font-bold uppercase tracking-widest text-journal-crimson">Global Fellowship</span>
-        <h2 class="font-display font-bold text-2xl sm:text-3xl text-journal-navy mt-1 mb-3">Worship With a Congregation Near You</h2>
-        <p class="text-xs sm:text-sm text-stone-600 max-w-xl mx-auto font-light mb-6">
-          Whether you are traveling or seeking a spiritual home, join us for Friday evening fellowship and Saturday Sabbath worship.
+    <!-- SECTION: FAITH TESTIMONIES -->
+    <section id="testimonies" class="py-16 bg-slate-50 border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <span class="text-xs font-bold text-tjc-cyan uppercase tracking-widest">Living Witnesses</span>
+          <h2 class="font-serif-headline text-3xl font-bold text-tjc-navy mt-1">Faith Testimonies from the Global Body</h2>
+          <p class="text-sm text-slate-600 mt-2">Real accounts of God's grace, prayer answers, and the reality of the Holy Spirit.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs flex flex-col justify-between">
+            <div>
+              <div class="text-xs font-bold text-tjc-cyan uppercase mb-2">Healing & Deliverance</div>
+              <h3 class="font-serif-headline text-xl font-bold text-tjc-navy mb-2">"Delivered from Stage IV Cancer Through Prayer"</h3>
+              <p class="font-serif-body text-base text-slate-700 leading-relaxed">
+                When medical prognoses seemed hopeless, our family held continuous fasting prayer in the spirit. In May 2024, the scans returned completely clear.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+              <span class="font-semibold text-slate-700">Sis. Grace Liu</span>
+              <span>San Jose, CA</span>
+            </div>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs flex flex-col justify-between">
+            <div>
+              <div class="text-xs font-bold text-tjc-cyan uppercase mb-2">Apostolic Truth</div>
+              <h3 class="font-serif-headline text-xl font-bold text-tjc-navy mb-2">"Finding the Sabbath after 20 Years of Searching"</h3>
+              <p class="font-serif-body text-base text-slate-700 leading-relaxed">
+                As a lifelong Bible reader, I searched for a church that kept the biblical seventh-day Sabbath in truth. Walking into the True Jesus Church felt like coming home.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+              <span class="font-semibold text-slate-700">Bro. David Miller</span>
+              <span>Edinburgh, UK</span>
+            </div>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs flex flex-col justify-between">
+            <div>
+              <div class="text-xs font-bold text-tjc-cyan uppercase mb-2">Holy Spirit Outpouring</div>
+              <h3 class="font-serif-headline text-xl font-bold text-tjc-navy mb-2">"The Living Water Filled My Thirsting Soul"</h3>
+              <p class="font-serif-body text-base text-slate-700 leading-relaxed">
+                At the annual spiritual convocation, I received the baptism of the Holy Spirit with speaking in tongues. The peace that surpassed all understanding filled my heart.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+              <span class="font-semibold text-slate-700">Sis. Rebecca Ong</span>
+              <span>Singapore</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: CHURCH FINDER -->
+    <section id="church-finder" class="py-16 bg-white border-t border-slate-200">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <span class="text-xs font-bold text-tjc-cyan uppercase tracking-widest">Global Congregation Directory</span>
+        <h2 class="font-serif-headline text-3xl font-bold text-tjc-navy mt-1 mb-4">Join Us for Sabbath Worship</h2>
+        <p class="text-sm text-slate-600 max-w-lg mx-auto mb-8 font-normal">
+          We warmly invite you to attend worship services this Friday evening or Saturday Sabbath at any of our congregations worldwide.
         </p>
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-3 max-w-md mx-auto">
-          <input type="text" placeholder="Enter city, state, or country..." class="w-full px-4 py-2.5 rounded-xl border border-stone-300 text-xs focus:outline-none focus:ring-2 focus:ring-journal-crimson">
-          <button class="w-full sm:w-auto px-6 py-2.5 rounded-xl bg-journal-navy hover:bg-slate-800 text-white font-semibold text-xs whitespace-nowrap">
-            Locate Chapel
+
+        <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 flex flex-col sm:flex-row gap-2 max-w-2xl mx-auto shadow-sm">
+          <input type="text" placeholder="Enter city, country, or postal code..." class="flex-grow px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-tjc-cyan">
+          <button class="px-6 py-3 rounded-xl bg-tjc-navy hover:bg-tjc-deep text-white font-bold text-sm transition-colors">
+            Find Chapel
           </button>
         </div>
       </div>
@@ -622,50 +571,48 @@
 
   </main>
 
-  <!-- MANDATORY GLOBAL FOOTER SPECIFICATION -->
-  <footer class="bg-journal-dark text-white pt-16 pb-12 border-t-4 border-journal-crimson">
+  <!-- MANDATORY GLOBAL FOOTER SPECIFICATION (Pantone 288 C) -->
+  <footer class="bg-tjc-navy text-white pt-16 pb-12 border-t border-tjc-cyan/30">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
+      <!-- Top Footer Brand & Mission -->
       <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-white/10">
         
         <div class="md:col-span-2 space-y-4">
           <div class="flex items-center gap-3">
-            <div class="w-9 h-9 rounded bg-journal-crimson text-white flex items-center justify-center font-display font-bold text-lg">
-              TJC
-            </div>
-            <div>
-              <div class="font-display font-bold text-lg text-white">TRUE JESUS CHURCH</div>
-              <div class="text-[10px] text-stone-400 tracking-widest uppercase">International Assembly Literary & Media Office</div>
-            </div>
+            <img src="../../assets/brand/tjc_logotype_english_white_300dpi.png" alt="True Jesus Church" class="h-10 w-auto object-contain">
           </div>
-          <p class="text-xs text-stone-300 font-light leading-relaxed max-w-md">
-            Established in 1917, the True Jesus Church is dedicated to preaching the restored apostolic truth to all nations, equipping disciples through publications, broadcasts, and worship on the holy Sabbath.
+          <p class="text-xs text-slate-300 font-normal leading-relaxed max-w-md">
+            Established in 1917 in Beijing, China, the True Jesus Church is an apostolic Christian body preaching the complete gospel of salvation and restoring the truth under the guidance of the Holy Spirit.
           </p>
-          <div class="text-xs text-journal-gold">
-            Canonical Root: <a href="https://tjc.org/" class="underline font-mono">https://tjc.org/</a>
+          <div class="text-xs text-cyan-300 font-semibold">
+            Root Domain: <a href="https://tjc.org/" class="underline hover:text-white">tjc.org/</a>
           </div>
         </div>
 
+        <!-- Quick Links -->
         <div>
-          <h4 class="text-xs font-bold uppercase tracking-wider text-journal-gold mb-4">Editorial Resources</h4>
-          <ul class="space-y-2 text-xs text-stone-400">
-            <li><a href="https://tjc.org/manna/" class="hover:text-white transition-colors">Manna Magazine Archive</a></li>
-            <li><a href="https://tjc.org/erhema/" class="hover:text-white transition-colors">eRhema Daily Devotional</a></li>
-            <li><a href="#broadcast-lead" class="hover:text-white transition-colors">Sermon Video Broadcasts</a></li>
-            <li><a href="https://tjc.org/audio-hymns/" class="hover:text-white transition-colors">Hymns of Praise (Audio)</a></li>
-            <li><a href="https://tjc.org/tracts/" class="hover:text-white transition-colors">Gospel Pamphlets & Tracts</a></li>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-300 mb-4">Editorial & Media</h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li><a href="#broadcast-lead" class="hover:text-white transition-colors">Livestream Services</a></li>
+            <li><a href="#manna-feature" class="hover:text-white transition-colors">Manna Magazine</a></li>
+            <li><a href="#beliefs-directory" class="hover:text-white transition-colors">10 Basic Beliefs</a></li>
+            <li><a href="#testimonies" class="hover:text-white transition-colors">Faith Testimonies</a></li>
+            <li><a href="https://tjc.org/hymns/" class="hover:text-white transition-colors">Spiritual Hymnal</a></li>
+            <li><a href="#church-finder" class="hover:text-white transition-colors">Church Locator</a></li>
           </ul>
         </div>
 
+        <!-- General Assemblies -->
         <div>
-          <h4 class="text-xs font-bold uppercase tracking-wider text-journal-gold mb-4">General Assemblies</h4>
-          <ul class="space-y-2 text-xs text-stone-400">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-300 mb-4">Coordination Boards</h4>
+          <ul class="space-y-2 text-xs text-slate-400">
             <li><a href="https://tjc.org/ia/" class="hover:text-white transition-colors">International Assembly (IA)</a></li>
-            <li><a href="https://tjc.org/ga-us/" class="hover:text-white transition-colors">GA of the United States</a></li>
-            <li><a href="https://tjc.org/ga-uk/" class="hover:text-white transition-colors">GA of the United Kingdom</a></li>
-            <li><a href="https://tjc.org/ga-tw/" class="hover:text-white transition-colors">GA of Taiwan (臺灣總會)</a></li>
-            <li><a href="https://tjc.org/ga-sg/" class="hover:text-white transition-colors">GA of Singapore</a></li>
-            <li><a href="https://tjc.org/cb-eu/" class="hover:text-white transition-colors">European Coordination Board</a></li>
+            <li><a href="https://tjc.org/ga-us/" class="hover:text-white transition-colors">General Assembly of USA</a></li>
+            <li><a href="https://tjc.org/ga-uk/" class="hover:text-white transition-colors">General Assembly of UK</a></li>
+            <li><a href="https://tjc.org/ga-tw/" class="hover:text-white transition-colors">General Assembly of Taiwan</a></li>
+            <li><a href="https://tjc.org/ga-my/" class="hover:text-white transition-colors">General Assembly of Malaysia</a></li>
+            <li><a href="https://tjc.org/cb-eu/" class="hover:text-white transition-colors">Coordination Board of Europe</a></li>
           </ul>
         </div>
 
@@ -673,129 +620,90 @@
 
       <!-- PROMINENT GLOBAL LANGUAGE SWITCHER (MANDATORY SPECIFICATION) -->
       <div id="language-directory" class="py-10 border-b border-white/10">
-        <div class="flex items-center gap-2 mb-3">
-          <svg class="w-4 h-4 text-journal-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/></svg>
-          <h4 class="text-xs font-bold uppercase tracking-widest text-journal-gold">Global Language Editions & Path Routing</h4>
+        <div class="flex items-center gap-2 mb-4">
+          <svg class="w-4 h-4 text-tjc-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/></svg>
+          <h4 class="text-xs font-bold uppercase tracking-widest text-cyan-200">Global Language Sites & Routing Architecture</h4>
         </div>
-        <p class="text-xs text-stone-400 mb-6 font-light">
-          Official regional portals mapped to standardized sub-paths for localized editorial content:
-        </p>
-
-        <!-- Standard URL Routing Matrix -->
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 text-xs">
-          
-          <a href="https://tjc.org/" class="p-3 rounded-lg bg-white/5 border border-white/10 hover:border-journal-gold/50 transition-colors block">
-            <div class="font-bold text-white">English (Global)</div>
-            <div class="font-mono text-[11px] text-journal-gold mt-1">tjc.org/</div>
-            <div class="text-[10px] text-stone-400">Root Edition</div>
+          <a href="https://tjc.org/" class="p-2.5 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 flex items-center justify-between group transition-colors">
+            <span class="font-bold text-white">English</span>
+            <span class="text-[10px] text-cyan-300 font-mono">tjc.org/</span>
           </a>
-
-          <a href="https://tjc.org/zh" class="p-3 rounded-lg bg-white/5 border border-white/10 hover:border-journal-gold/50 transition-colors block">
-            <div class="font-bold text-white">中文 (Chinese)</div>
-            <div class="font-mono text-[11px] text-journal-gold mt-1">tjc.org/zh</div>
-            <div class="text-[10px] text-stone-400">華語 / 國語</div>
+          <a href="https://tjc.org/zh" class="p-2.5 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 flex items-center justify-between group transition-colors">
+            <span class="font-medium text-slate-300 group-hover:text-white">中文 (Chinese)</span>
+            <span class="text-[10px] text-cyan-300 font-mono">/zh</span>
           </a>
-
-          <a href="https://tjc.org/es" class="p-3 rounded-lg bg-white/5 border border-white/10 hover:border-journal-gold/50 transition-colors block">
-            <div class="font-bold text-white">Español</div>
-            <div class="font-mono text-[11px] text-journal-gold mt-1">tjc.org/es</div>
-            <div class="text-[10px] text-stone-400">Edición en Español</div>
+          <a href="https://tjc.org/es" class="p-2.5 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 flex items-center justify-between group transition-colors">
+            <span class="font-medium text-slate-300 group-hover:text-white">Español</span>
+            <span class="text-[10px] text-cyan-300 font-mono">/es</span>
           </a>
-
-          <a href="https://tjc.org/fr" class="p-3 rounded-lg bg-white/5 border border-white/10 hover:border-journal-gold/50 transition-colors block">
-            <div class="font-bold text-white">Français</div>
-            <div class="font-mono text-[11px] text-journal-gold mt-1">tjc.org/fr</div>
-            <div class="text-[10px] text-stone-400">Édition Française</div>
+          <a href="https://tjc.org/fr" class="p-2.5 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 flex items-center justify-between group transition-colors">
+            <span class="font-medium text-slate-300 group-hover:text-white">Français</span>
+            <span class="text-[10px] text-cyan-300 font-mono">/fr</span>
           </a>
-
-          <a href="https://tjc.org/de" class="p-3 rounded-lg bg-white/5 border border-white/10 hover:border-journal-gold/50 transition-colors block">
-            <div class="font-bold text-white">Deutsch</div>
-            <div class="font-mono text-[11px] text-journal-gold mt-1">tjc.org/de</div>
-            <div class="text-[10px] text-stone-400">Deutsche Ausgabe</div>
+          <a href="https://tjc.org/de" class="p-2.5 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 flex items-center justify-between group transition-colors">
+            <span class="font-medium text-slate-300 group-hover:text-white">Deutsch</span>
+            <span class="text-[10px] text-cyan-300 font-mono">/de</span>
           </a>
-
-          <a href="https://tjc.org/ja" class="p-3 rounded-lg bg-white/5 border border-white/10 hover:border-journal-gold/50 transition-colors block">
-            <div class="font-bold text-white">日本語 (Japanese)</div>
-            <div class="font-mono text-[11px] text-journal-gold mt-1">tjc.org/ja</div>
-            <div class="text-[10px] text-stone-400">日本真イエス教会</div>
+          <a href="https://tjc.org/ja" class="p-2.5 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 flex items-center justify-between group transition-colors">
+            <span class="font-medium text-slate-300 group-hover:text-white">日本語</span>
+            <span class="text-[10px] text-cyan-300 font-mono">/ja</span>
           </a>
-
-          <a href="https://tjc.org/ko" class="p-3 rounded-lg bg-white/5 border border-white/10 hover:border-journal-gold/50 transition-colors block">
-            <div class="font-bold text-white">한국어 (Korean)</div>
-            <div class="font-mono text-[11px] text-journal-gold mt-1">tjc.org/ko</div>
-            <div class="text-[10px] text-stone-400">한국 참예수교회</div>
+          <a href="https://tjc.org/ko" class="p-2.5 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 flex items-center justify-between group transition-colors">
+            <span class="font-medium text-slate-300 group-hover:text-white">한국어</span>
+            <span class="text-[10px] text-cyan-300 font-mono">/ko</span>
           </a>
-
-          <a href="https://tjc.org/id" class="p-3 rounded-lg bg-white/5 border border-white/10 hover:border-journal-gold/50 transition-colors block">
-            <div class="font-bold text-white">Bahasa Indonesia</div>
-            <div class="font-mono text-[11px] text-journal-gold mt-1">tjc.org/id</div>
-            <div class="text-[10px] text-stone-400">Gereja Yesus Sejati</div>
+          <a href="https://tjc.org/id" class="p-2.5 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 flex items-center justify-between group transition-colors">
+            <span class="font-medium text-slate-300 group-hover:text-white">Bahasa Indonesia</span>
+            <span class="text-[10px] text-cyan-300 font-mono">/id</span>
           </a>
-
-          <a href="https://tjc.org/vi" class="p-3 rounded-lg bg-white/5 border border-white/10 hover:border-journal-gold/50 transition-colors block">
-            <div class="font-bold text-white">Tiếng Việt</div>
-            <div class="font-mono text-[11px] text-journal-gold mt-1">tjc.org/vi</div>
-            <div class="text-[10px] text-stone-400">Hội Thánh Chân Chúa</div>
+          <a href="https://tjc.org/vi" class="p-2.5 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 flex items-center justify-between group transition-colors">
+            <span class="font-medium text-slate-300 group-hover:text-white">Tiếng Việt</span>
+            <span class="text-[10px] text-cyan-300 font-mono">/vi</span>
           </a>
-
-          <a href="https://tjc.org/pt" class="p-3 rounded-lg bg-white/5 border border-white/10 hover:border-journal-gold/50 transition-colors block">
-            <div class="font-bold text-white">Português</div>
-            <div class="font-mono text-[11px] text-journal-gold mt-1">tjc.org/pt</div>
-            <div class="text-[10px] text-stone-400">Igreja Verdadeiro Jesus</div>
+          <a href="https://tjc.org/pt" class="p-2.5 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 flex items-center justify-between group transition-colors">
+            <span class="font-medium text-slate-300 group-hover:text-white">Português</span>
+            <span class="text-[10px] text-cyan-300 font-mono">/pt</span>
           </a>
-
-          <a href="https://tjc.org/ru" class="p-3 rounded-lg bg-white/5 border border-white/10 hover:border-journal-gold/50 transition-colors block">
-            <div class="font-bold text-white">Русский</div>
-            <div class="font-mono text-[11px] text-journal-gold mt-1">tjc.org/ru</div>
-            <div class="text-[10px] text-stone-400">Русская редакция</div>
+          <a href="https://tjc.org/ru" class="p-2.5 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 flex items-center justify-between group transition-colors">
+            <span class="font-medium text-slate-300 group-hover:text-white">Русский</span>
+            <span class="text-[10px] text-cyan-300 font-mono">/ru</span>
           </a>
-
-          <a href="https://tjc.org/th" class="p-3 rounded-lg bg-white/5 border border-white/10 hover:border-journal-gold/50 transition-colors block">
-            <div class="font-bold text-white">ภาษาไทย (Thai)</div>
-            <div class="font-mono text-[11px] text-journal-gold mt-1">tjc.org/th</div>
-            <div class="text-[10px] text-stone-400">คริสตจักรเยซูแท้</div>
+          <a href="https://tjc.org/th" class="p-2.5 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 flex items-center justify-between group transition-colors">
+            <span class="font-medium text-slate-300 group-hover:text-white">ภาษาไทย</span>
+            <span class="text-[10px] text-cyan-300 font-mono">/th</span>
           </a>
-
         </div>
       </div>
 
-      <!-- Legal and Disclaimers -->
-      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-400 gap-4">
+      <!-- Bottom Legal and Identity Credits -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
         <div>
-          Copyright © 2026 True Jesus Church. All rights reserved.
+          © 2026 True Jesus Church. All Rights Reserved. Aligned with <a href="https://identity.tjc.org/" target="_blank" class="text-cyan-300 underline hover:text-white">TJC Identity Guidelines</a>.
         </div>
         <div class="flex items-center gap-6">
-          <a href="https://tjc.org/editorial-board/" class="hover:text-white transition-colors">Editorial Board</a>
-          <a href="https://tjc.org/privacy-policy/" class="hover:text-white transition-colors">Privacy Policy</a>
-          <a href="https://tjc.org/terms-of-use/" class="hover:text-white transition-colors">Terms of Use</a>
-          <a href="https://tjc.org/contact/" class="hover:text-white transition-colors">Media Inquiries</a>
+          <a href="https://tjc.org/terms/" class="hover:text-white transition-colors">Terms of Use</a>
+          <a href="https://tjc.org/privacy/" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="https://identity.tjc.org/" target="_blank" class="hover:text-white transition-colors">Identity Guidelines</a>
+          <a href="#" class="hover:text-white transition-colors">Back to top &uarr;</a>
         </div>
       </div>
 
     </div>
   </footer>
 
-  <!-- Interactivity Scripts -->
+  <!-- Scripts -->
   <script>
-    // Search modal toggle
-    const searchOpenBtn = document.getElementById('searchOpenBtn');
-    const searchCloseBtn = document.getElementById('searchCloseBtn');
-    const searchModalBox = document.getElementById('searchModalBox');
-
-    if (searchOpenBtn && searchCloseBtn && searchModalBox) {
-      searchOpenBtn.addEventListener('click', () => searchModalBox.classList.remove('hidden'));
-      searchCloseBtn.addEventListener('click', () => searchModalBox.classList.add('hidden'));
-      searchModalBox.addEventListener('click', (e) => {
-        if (e.target === searchModalBox) searchModalBox.classList.add('hidden');
-      });
-    }
-
-    // Mobile toggle
     const mobileToggle = document.getElementById('mobileToggle');
     const mobileDrawer = document.getElementById('mobileDrawer');
-    if (mobileToggle && mobileDrawer) {
-      mobileToggle.addEventListener('click', () => mobileDrawer.classList.toggle('hidden'));
-    }
+    mobileToggle.addEventListener('click', () => mobileDrawer.classList.toggle('hidden'));
+
+    const searchOpenBtn = document.getElementById('searchOpenBtn');
+    const searchModalBox = document.getElementById('searchModalBox');
+    const searchCloseBtn = document.getElementById('searchCloseBtn');
+    searchOpenBtn.addEventListener('click', () => searchModalBox.classList.remove('hidden'));
+    searchCloseBtn.addEventListener('click', () => searchModalBox.classList.add('hidden'));
   </script>
+
 </body>
 </html>

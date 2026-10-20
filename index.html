@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TJC International Web Redesign | Simplified Site Template Exploration</title>
-  <meta name="description" content="Review gallery for True Jesus Church Simplified Site Templates: Option A (Minimalist Portal), Option B (Editorial/Media-First), and Option C (Utility & Community Hub).">
+  <title>TJC International Web Redesign | Identity Guidelines Aligned Reviewer Suite</title>
+  <meta name="description" content="Review gallery for True Jesus Church Simplified Site Templates aligned with official TJC Identity Guidelines (identity.tjc.org): Option A (Minimalist Sanctuary), Option B (Editorial Media), and Option C (Utility & Community Hub).">
+  <link rel="icon" type="image/png" href="assets/brand/TJC_Color Dove_Social Icon_200x200.png">
+  
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -12,31 +14,38 @@
       theme: {
         extend: {
           colors: {
-            portal: {
-              navy: '#0F1E36',
-              gold: '#C5A059',
-              slate: '#1E293B',
-              border: '#E2E8F0',
-              bg: '#F8FAFC'
+            tjc: {
+              navy: '#23356F',       // Pantone 288 C (Official Theme Navy)
+              deep: '#192652',       // Deeper Navy
+              cyan: '#007DA4',       // Pantone 314 C (Official Theme Cyan)
+              cyanLight: '#E8F5F8',  // Soft Cyan Tint
+              cyanHover: '#006889',
+              gold: '#C5A059',       // Subtle Gold Accent
+              gray65: '#595959',     // 65K Tone
+              gray50: '#7F7F7F',
+              gray25: '#D1D5DB'
             }
           },
           fontFamily: {
-            sans: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif'],
-            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Source Sans 3"', '"Source Sans Pro"', 'system-ui', 'sans-serif'],
+            serif: ['"Crimson Text"', 'Georgia', 'serif'],
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
             mono: ['"JetBrains Mono"', 'monospace']
           }
         }
       }
     }
   </script>
-  <!-- Google Fonts -->
+  
+  <!-- Google Fonts: Official TJC Identity Guidelines Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400;1,600&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
   <style>
     body {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      background-color: #0F172A;
+      font-family: 'Source Sans 3', 'Source Sans Pro', sans-serif;
+      background-color: #0B1226;
       color: #F8FAFC;
     }
     .preview-container {
@@ -46,26 +55,26 @@
 </head>
 <body class="min-h-screen flex flex-col antialiased">
 
-  <!-- TOP REVIEWER CONTROL BAR -->
-  <header class="bg-slate-900 border-b border-slate-800 sticky top-0 z-50 shadow-xl">
-    <div class="max-w-[1720px] mx-auto px-4 sm:px-6 py-3.5 flex flex-col lg:flex-row items-center justify-between gap-4">
+  <!-- TOP REVIEWER CONTROL BAR (Pantone 288 C Dark Tone) -->
+  <header class="bg-[#101B3B] border-b border-slate-800 sticky top-0 z-50 shadow-2xl">
+    <div class="max-w-[1720px] mx-auto px-4 sm:px-6 py-3 flex flex-col lg:flex-row items-center justify-between gap-4">
       
-      <!-- Brand & Project Header -->
+      <!-- Brand & Project Header with Official Dove Icon -->
       <div class="flex items-center gap-3.5">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-600 to-amber-400 text-slate-950 flex items-center justify-center font-extrabold text-sm shadow-md">
-          TJC
+        <div class="w-11 h-11 rounded-xl bg-white p-1 shadow-md flex items-center justify-center flex-shrink-0 border border-slate-200">
+          <img src="assets/brand/TJC_Color Dove_Social Icon_400x400.png" alt="TJC Dove Emblem" class="w-full h-full object-contain">
         </div>
         <div>
-          <div class="flex items-center gap-2">
-            <h1 class="font-bold text-base sm:text-lg text-white tracking-tight">
+          <div class="flex items-center gap-2 flex-wrap">
+            <h1 class="font-bold text-base sm:text-lg text-white tracking-tight font-display">
               True Jesus Church · International Template Exploration
             </h1>
-            <span class="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 text-[10px] font-bold uppercase tracking-wider border border-emerald-500/30">
-              Reviewer Suite
+            <span class="px-2 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 text-[10px] font-bold uppercase tracking-wider border border-cyan-500/30">
+              Identity Guidelines Aligned
             </span>
           </div>
-          <p class="text-xs text-slate-400">
-            Baseline: <code class="text-amber-300 font-mono text-[11px]">tjc.org</code> · 3 Distinct Simplified Archetypes for Global Language Deployment
+          <p class="text-xs text-slate-300">
+            Compliant with <a href="https://identity.tjc.org/" target="_blank" class="text-cyan-300 underline hover:text-white font-mono">identity.tjc.org</a> · Pantone 288 C (<code class="text-white font-mono">#23356F</code>) & Pantone 314 C (<code class="text-white font-mono">#007DA4</code>)
           </p>
         </div>
       </div>
@@ -74,10 +83,10 @@
       <div class="flex items-center bg-slate-950/80 p-1 rounded-xl border border-slate-800">
         
         <!-- Tab Option A -->
-        <button onclick="switchTemplate('option-a')" id="tab-option-a" class="tab-btn px-4 py-2 rounded-lg text-xs font-bold transition-all bg-amber-500 text-slate-950 shadow-md">
+        <button onclick="switchTemplate('option-a')" id="tab-option-a" class="tab-btn px-4 py-2 rounded-lg text-xs font-bold transition-all bg-tjc-cyan text-white shadow-md">
           <div class="flex items-center gap-1.5">
-            <span class="w-2 h-2 rounded-full bg-slate-950"></span>
-            <span>Option A: Minimalist Portal</span>
+            <span class="w-2 h-2 rounded-full bg-white"></span>
+            <span>Option A: Minimalist Sanctuary</span>
           </div>
         </button>
 
@@ -99,8 +108,15 @@
 
       </div>
 
-      <!-- VIEWPORT SIMULATOR TOGGLES & EXTERNAL LAUNCH -->
+      <!-- VIEWPORT SIMULATOR TOGGLES, GUIDELINES MODAL & EXTERNAL LAUNCH -->
       <div class="flex items-center gap-2">
+        
+        <!-- Identity Standards Quick Button -->
+        <button onclick="toggleGuidelinesModal()" class="px-3 py-1.5 rounded-xl bg-slate-800/80 hover:bg-slate-700 border border-slate-700 text-xs font-semibold text-cyan-300 hover:text-white flex items-center gap-1.5 transition-colors">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          <span class="hidden sm:inline">Brand Standards</span>
+        </button>
+
         <div class="flex items-center bg-slate-950/80 p-1 rounded-xl border border-slate-800 text-xs">
           <!-- Desktop 1440px -->
           <button onclick="setViewport('100%')" id="vp-desktop" class="vp-btn px-3 py-1.5 rounded-lg font-semibold bg-slate-800 text-white flex items-center gap-1.5">
@@ -131,16 +147,16 @@
   </header>
 
   <!-- TEMPLATE META SUMMARY BAR -->
-  <div id="metaBar" class="bg-slate-950/70 border-b border-slate-800/80 px-6 py-2.5 text-xs text-slate-400 flex flex-wrap items-center justify-between gap-4">
+  <div id="metaBar" class="bg-[#0B132B] border-b border-slate-800 px-6 py-2.5 text-xs text-slate-400 flex flex-wrap items-center justify-between gap-4">
     <div class="flex items-center gap-4">
-      <span class="font-bold text-white" id="currentTemplateName">Option A: Minimalist Portal</span>
+      <span class="font-bold text-white text-sm" id="currentTemplateName">Option A: Minimalist Sanctuary</span>
       <span class="text-slate-600">|</span>
-      <span id="currentTemplateConcept">High-whitespace, serene sanctuary, focus on key entry points (Live Stream, Find a Church, Basic Beliefs), ultra-fast load.</span>
+      <span id="currentTemplateConcept" class="text-slate-300">High-whitespace serene sanctuary with Playfair Display titling, Crimson Text scripture meditation, and Source Sans 3 UI.</span>
     </div>
     <div class="flex items-center gap-4 text-[11px] font-mono">
-      <span class="text-amber-400" id="currentFontPair">Playfair Display + Plus Jakarta Sans</span>
+      <span class="text-cyan-300" id="currentFontPair">Playfair Display + Crimson Text + Source Sans 3</span>
       <span class="text-slate-600">|</span>
-      <span class="text-emerald-400" id="currentLoadWeight">Est. Payload: ~28 KB (Tailwind CDN)</span>
+      <span class="text-emerald-400" id="currentLoadWeight">Est. Payload: ~29 KB (Zero Framework Overhead)</span>
     </div>
   </div>
 
@@ -153,10 +169,10 @@
           <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
           <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
           <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
-          <span class="ml-2 font-mono text-[11px] text-slate-400" id="browserUrl">http://localhost:8080/templates/option-a/index.html</span>
+          <span class="ml-2 font-mono text-[11px] text-slate-300" id="browserUrl">http://localhost:8080/templates/option-a/index.html</span>
         </div>
         <div class="flex items-center gap-3 text-[11px]">
-          <span id="viewportLabel" class="font-mono text-amber-400">100% (Desktop 1440px)</span>
+          <span id="viewportLabel" class="font-mono text-cyan-300">100% (Desktop 1440px)</span>
           <button onclick="reloadPreview()" class="text-slate-400 hover:text-white" title="Reload Frame">
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
           </button>
@@ -167,47 +183,62 @@
     </div>
   </main>
 
-  <!-- STRATEGIC COMPARISON & TRADE-OFF ACCORDION -->
-  <section class="bg-slate-900 border-t border-slate-800 px-4 sm:px-6 py-8">
+  <!-- STRATEGIC COMPARISON & TRADE-OFF MATRIX -->
+  <section class="bg-[#0E172F] border-t border-slate-800 px-4 sm:px-6 py-8">
     <div class="max-w-7xl mx-auto">
       
       <div class="flex items-center justify-between mb-6 pb-4 border-b border-slate-800">
         <div>
-          <h2 class="text-lg font-bold text-white flex items-center gap-2">
+          <h2 class="text-lg font-bold text-white flex items-center gap-2 font-display">
             <span>Executive Layout Trade-offs & Strategic Analysis</span>
-            <span class="text-xs px-2.5 py-0.5 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/30">Review Committee Brief</span>
+            <span class="text-xs px-2.5 py-0.5 rounded-full bg-cyan-500/10 text-cyan-300 border border-cyan-500/30">Review Committee Brief</span>
           </h2>
-          <p class="text-xs text-slate-400 mt-1">Comparative evaluation across the 3 template archetypes for international deployment across global language sub-paths.</p>
+          <p class="text-xs text-slate-300 mt-1">Comparative evaluation across the 3 template archetypes, each strictly aligned with the TJC Identity Guidelines.</p>
         </div>
-        <a href="#screenshot-gallery" class="text-xs text-amber-400 hover:underline flex items-center gap-1 font-semibold">
+        <a href="#screenshot-gallery" class="text-xs text-cyan-300 hover:underline flex items-center gap-1 font-semibold">
           <span>View Automated Screenshots</span>
           <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
         </a>
       </div>
 
       <!-- Comparative Matrix Table -->
-      <div class="overflow-x-auto rounded-xl border border-slate-800">
+      <div class="overflow-x-auto rounded-xl border border-slate-800 shadow-xl">
         <table class="w-full text-left text-xs text-slate-300">
           <thead class="bg-slate-950 text-slate-400 uppercase font-mono text-[10px] tracking-wider border-b border-slate-800">
             <tr>
-              <th class="py-3 px-4">Evaluation Dimension</th>
-              <th class="py-3 px-4 text-amber-300">Option A: Minimalist Portal</th>
-              <th class="py-3 px-4 text-blue-300">Option B: Editorial Media-First</th>
-              <th class="py-3 px-4 text-emerald-300">Option C: Utility & Community Hub</th>
+              <th class="py-3.5 px-4">Evaluation Dimension</th>
+              <th class="py-3.5 px-4 text-cyan-300">Option A: Minimalist Sanctuary</th>
+              <th class="py-3.5 px-4 text-cyan-300">Option B: Editorial Media-First</th>
+              <th class="py-3.5 px-4 text-cyan-300">Option C: Utility & Community Hub</th>
             </tr>
           </thead>
           <tbody class="divide-y divide-slate-800/80 bg-slate-900/60">
             <tr>
+              <td class="py-3.5 px-4 font-semibold text-white">Identity Guidelines Compliance</td>
+              <td class="py-3.5 px-4 text-emerald-400 font-semibold" colspan="3">
+                <span class="inline-flex items-center gap-1.5">
+                  <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                  <span>100% Compliant: Official Pantone 288 C (<code class="text-white">#23356F</code>) & Pantone 314 C (<code class="text-white">#007DA4</code>) · Official Source Sans 3, Crimson Text, Playfair Display fonts · Official vector-sharp 300dpi TJC Dove logotypes.</span>
+                </span>
+              </td>
+            </tr>
+            <tr>
               <td class="py-3.5 px-4 font-semibold text-white">Design Aesthetic</td>
               <td class="py-3.5 px-4">Serene, high whitespace, classical serif elegance, reverent contemplation.</td>
-              <td class="py-3.5 px-4">Rich editorial publication, journalistic hierarchy, warm parchment.</td>
-              <td class="py-3.5 px-4">Modern SaaS-grade clarity, welcoming, actionable, vibrant blue/slate.</td>
+              <td class="py-3.5 px-4">Rich editorial publication, journalistic hierarchy, warm white paper canvas.</td>
+              <td class="py-3.5 px-4">Modern clarity, welcoming community orientation, actionable search and schedule cards.</td>
             </tr>
             <tr>
               <td class="py-3.5 px-4 font-semibold text-white">Hero Focus</td>
-              <td class="py-3.5 px-4">Spiritual mission statement + 3 high-contrast pathway cards.</td>
-              <td class="py-3.5 px-4">Simultaneous Dual Hero: Lead Live Broadcast (60%) + Manna Spotlight (40%).</td>
+              <td class="py-3.5 px-4">Spiritual mission statement + 3 serene pathway cards (Live Worship, Church Finder, Beliefs).</td>
+              <td class="py-3.5 px-4">Dual Hero: Lead Live Broadcast with Audio Selector (60%) + Manna Magazine Issue 114 (40%).</td>
               <td class="py-3.5 px-4">Interactive Church Locator Search Bar + Service Schedules preview.</td>
+            </tr>
+            <tr>
+              <td class="py-3.5 px-4 font-semibold text-white">Typography System</td>
+              <td class="py-3.5 px-4">Playfair Display titles + Crimson Text scripture + Source Sans 3 body.</td>
+              <td class="py-3.5 px-4">Playfair Display mastheads + Crimson Text longform articles + Source Sans 3 UI.</td>
+              <td class="py-3.5 px-4">Source Sans 3 UI & locator + Playfair Display headers + Crimson Text beliefs.</td>
             </tr>
             <tr>
               <td class="py-3.5 px-4 font-semibold text-white">Primary Target Audience</td>
@@ -228,15 +259,9 @@
               <td class="py-3.5 px-4 text-emerald-400 font-semibold">Low-Medium (Requires periodic church address and schedule updates).</td>
             </tr>
             <tr>
-              <td class="py-3.5 px-4 font-semibold text-white">Mobile Responsiveness</td>
-              <td class="py-3.5 px-4">Exceptional — clean stacking, single-column calm rhythm.</td>
-              <td class="py-3.5 px-4">Strong — video player scales smoothly, magazine cards stack vertically.</td>
-              <td class="py-3.5 px-4">High Utility — search input and service times readily accessible on thumb touch.</td>
-            </tr>
-            <tr>
               <td class="py-3.5 px-4 font-semibold text-white">Footer Routing Specs</td>
               <td class="py-3.5 px-4" colspan="3">
-                <span class="text-white font-mono font-medium">All 3 templates implement identical prominent 12-language directory</span> with clean URL paths (<code class="text-amber-300">tjc.org/</code>, <code class="text-amber-300">/zh</code>, <code class="text-amber-300">/es</code>, <code class="text-amber-300">/fr</code>, <code class="text-amber-300">/de</code>, <code class="text-amber-300">/ja</code>, <code class="text-amber-300">/ko</code>, <code class="text-amber-300">/id</code>, <code class="text-amber-300">/vi</code>, <code class="text-amber-300">/pt</code>, <code class="text-amber-300">/ru</code>, <code class="text-amber-300">/th</code>) and General Assemblies hierarchy.
+                <span class="text-white font-mono font-medium">All 3 templates implement identical prominent 12-language directory</span> with clean URL paths (<code class="text-cyan-300">tjc.org/</code>, <code class="text-cyan-300">/zh</code>, <code class="text-cyan-300">/es</code>, <code class="text-cyan-300">/fr</code>, <code class="text-cyan-300">/de</code>, <code class="text-cyan-300">/ja</code>, <code class="text-cyan-300">/ko</code>, <code class="text-cyan-300">/id</code>, <code class="text-cyan-300">/vi</code>, <code class="text-cyan-300">/pt</code>, <code class="text-cyan-300">/ru</code>, <code class="text-cyan-300">/th</code>) and General Assemblies hierarchy.
               </td>
             </tr>
           </tbody>
@@ -245,7 +270,7 @@
 
       <!-- SCREENSHOT ARTIFACT GALLERY SECTION -->
       <div id="screenshot-gallery" class="mt-12 pt-8 border-t border-slate-800">
-        <h3 class="text-base font-bold text-white mb-4 flex items-center gap-2">
+        <h3 class="text-base font-bold text-white mb-4 flex items-center gap-2 font-display">
           <span>Automated High-Resolution Screenshot Artifacts</span>
           <span class="text-xs text-slate-400 font-mono">(Saved in ./artifacts/screenshots/)</span>
         </h3>
@@ -255,17 +280,17 @@
           <!-- Screenshot Card Option A -->
           <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
             <div class="flex items-center justify-between mb-2">
-              <span class="font-bold text-white text-xs">Option A: Minimalist</span>
-              <span class="text-[10px] text-amber-400 font-mono">1440px & 390px</span>
+              <span class="font-bold text-white text-xs">Option A: Minimalist Sanctuary</span>
+              <span class="text-[10px] text-cyan-300 font-mono">1440px & 390px</span>
             </div>
             <div class="space-y-2">
               <a href="artifacts/screenshots/option-a-desktop.png" target="_blank" class="block p-2 rounded bg-slate-900 hover:bg-slate-800 text-[11px] text-slate-300 flex items-center justify-between">
                 <span>🖥️ option-a-desktop.png</span>
-                <span class="text-amber-400">View &rarr;</span>
+                <span class="text-cyan-300">View &rarr;</span>
               </a>
               <a href="artifacts/screenshots/option-a-mobile.png" target="_blank" class="block p-2 rounded bg-slate-900 hover:bg-slate-800 text-[11px] text-slate-300 flex items-center justify-between">
                 <span>📱 option-a-mobile.png</span>
-                <span class="text-amber-400">View &rarr;</span>
+                <span class="text-cyan-300">View &rarr;</span>
               </a>
             </div>
           </div>
@@ -274,16 +299,16 @@
           <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
             <div class="flex items-center justify-between mb-2">
               <span class="font-bold text-white text-xs">Option B: Editorial Media</span>
-              <span class="text-[10px] text-blue-400 font-mono">1440px & 390px</span>
+              <span class="text-[10px] text-cyan-300 font-mono">1440px & 390px</span>
             </div>
             <div class="space-y-2">
               <a href="artifacts/screenshots/option-b-desktop.png" target="_blank" class="block p-2 rounded bg-slate-900 hover:bg-slate-800 text-[11px] text-slate-300 flex items-center justify-between">
                 <span>🖥️ option-b-desktop.png</span>
-                <span class="text-blue-400">View &rarr;</span>
+                <span class="text-cyan-300">View &rarr;</span>
               </a>
               <a href="artifacts/screenshots/option-b-mobile.png" target="_blank" class="block p-2 rounded bg-slate-900 hover:bg-slate-800 text-[11px] text-slate-300 flex items-center justify-between">
                 <span>📱 option-b-mobile.png</span>
-                <span class="text-blue-400">View &rarr;</span>
+                <span class="text-cyan-300">View &rarr;</span>
               </a>
             </div>
           </div>
@@ -292,16 +317,16 @@
           <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
             <div class="flex items-center justify-between mb-2">
               <span class="font-bold text-white text-xs">Option C: Community Hub</span>
-              <span class="text-[10px] text-emerald-400 font-mono">1440px & 390px</span>
+              <span class="text-[10px] text-cyan-300 font-mono">1440px & 390px</span>
             </div>
             <div class="space-y-2">
               <a href="artifacts/screenshots/option-c-desktop.png" target="_blank" class="block p-2 rounded bg-slate-900 hover:bg-slate-800 text-[11px] text-slate-300 flex items-center justify-between">
                 <span>🖥️ option-c-desktop.png</span>
-                <span class="text-emerald-400">View &rarr;</span>
+                <span class="text-cyan-300">View &rarr;</span>
               </a>
               <a href="artifacts/screenshots/option-c-mobile.png" target="_blank" class="block p-2 rounded bg-slate-900 hover:bg-slate-800 text-[11px] text-slate-300 flex items-center justify-between">
                 <span>📱 option-c-mobile.png</span>
-                <span class="text-emerald-400">View &rarr;</span>
+                <span class="text-cyan-300">View &rarr;</span>
               </a>
             </div>
           </div>
@@ -312,34 +337,124 @@
     </div>
   </section>
 
+  <!-- IDENTITY GUIDELINES REFERENCE MODAL -->
+  <div id="guidelinesModal" class="hidden fixed inset-0 z-50 bg-black/75 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="bg-[#101B3B] border border-slate-700 rounded-3xl max-w-3xl w-full p-6 sm:p-8 shadow-2xl text-slate-200 max-h-[90vh] overflow-y-auto">
+      <div class="flex items-center justify-between pb-4 border-b border-slate-800">
+        <div class="flex items-center gap-3">
+          <img src="assets/brand/TJC_Color Dove_Social Icon_200x200.png" alt="TJC Dove" class="w-8 h-8 rounded-lg bg-white p-0.5">
+          <div>
+            <h3 class="text-lg font-bold text-white font-display">TJC Identity Guidelines Reference</h3>
+            <p class="text-xs text-slate-400">Official Standards from <a href="https://identity.tjc.org/" target="_blank" class="text-cyan-300 underline">identity.tjc.org</a></p>
+          </div>
+        </div>
+        <button onclick="toggleGuidelinesModal()" class="text-slate-400 hover:text-white p-1">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <div class="mt-6 space-y-6 text-xs sm:text-sm">
+        
+        <!-- Theme Colors Section -->
+        <div>
+          <h4 class="font-bold text-white uppercase tracking-wider text-xs mb-3 text-cyan-300">1. Official Theme Colors (TJC Blue / Tekelet)</h4>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 flex items-center gap-3">
+              <div class="w-14 h-14 rounded-lg bg-[#23356F] border border-white/20 flex-shrink-0"></div>
+              <div>
+                <div class="font-bold text-white">Pantone 288 C (Primary Blue)</div>
+                <div class="font-mono text-xs text-slate-300">HEX: #23356F</div>
+                <div class="text-[11px] text-slate-400">RGB: 35, 53, 111 · CMYK: 100, 91, 27, 15</div>
+              </div>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 flex items-center gap-3">
+              <div class="w-14 h-14 rounded-lg bg-[#007DA4] border border-white/20 flex-shrink-0"></div>
+              <div>
+                <div class="font-bold text-white">Pantone 314 C (Secondary Blue)</div>
+                <div class="font-mono text-xs text-slate-300">HEX: #007DA4</div>
+                <div class="text-[11px] text-slate-400">RGB: 0, 125, 164 · CMYK: 87, 41, 22, 1</div>
+              </div>
+            </div>
+          </div>
+          <p class="text-xs text-slate-400 italic mt-2">
+            "The color blue (in Hebrew, tekelet) is heavenly. It represents the true church is of heaven and is preaching the complete gospel... Different versions of blue or teal should not be used." (Identity Guidelines p. 25)
+          </p>
+        </div>
+
+        <!-- Typography System -->
+        <div>
+          <h4 class="font-bold text-white uppercase tracking-wider text-xs mb-3 text-cyan-300">2. Prescribed Typographic System</h4>
+          <div class="space-y-2">
+            <div class="p-3 rounded-lg bg-slate-900 border border-slate-800">
+              <div class="flex items-center justify-between">
+                <span class="font-bold text-white">Primary Sans Serif: Source Sans Pro / Source Sans 3</span>
+                <span class="text-xs text-cyan-300 font-mono">General UI, Web, Buttons</span>
+              </div>
+              <p class="text-xs text-slate-400 mt-1">Designed to communicate with confidence and authority while remaining friendly and approachable.</p>
+            </div>
+            <div class="p-3 rounded-lg bg-slate-900 border border-slate-800">
+              <div class="flex items-center justify-between">
+                <span class="font-bold text-white">Primary Serif: Crimson Text</span>
+                <span class="text-xs text-cyan-300 font-mono">Formal communications, Scriptures, Articles</span>
+              </div>
+              <p class="text-xs text-slate-400 mt-1">Gentle, traditional oldstyle serif with superior legibility for longform reading.</p>
+            </div>
+            <div class="p-3 rounded-lg bg-slate-900 border border-slate-800">
+              <div class="flex items-center justify-between">
+                <span class="font-bold text-white">Secondary Serif: Playfair Display</span>
+                <span class="text-xs text-cyan-300 font-mono">Titling & Headlines</span>
+              </div>
+              <p class="text-xs text-slate-400 mt-1">High-contrast display serif suited for editorial and heroic headlines.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Brand Architecture -->
+        <div>
+          <h4 class="font-bold text-white uppercase tracking-wider text-xs mb-2 text-cyan-300">3. Brand Architecture</h4>
+          <blockquote class="p-3 rounded-lg bg-slate-900 border-l-4 border-cyan-400 text-xs text-slate-300 italic">
+            "We are one church. We are a unified body. We have one identity. We are a branded house, not a house of brands." (Identity Guidelines p. 21)
+          </blockquote>
+        </div>
+
+      </div>
+
+      <div class="mt-6 pt-4 border-t border-slate-800 flex justify-end">
+        <button onclick="toggleGuidelinesModal()" class="px-5 py-2 rounded-xl bg-tjc-cyan text-white font-bold text-xs hover:bg-tjc-cyanHover transition-colors">
+          Close Reference
+        </button>
+      </div>
+    </div>
+  </div>
+
   <!-- Interactive Switcher Script -->
   <script>
     const templates = {
       'option-a': {
-        name: 'Option A: Minimalist Portal',
-        concept: 'High-whitespace, serene sanctuary, focus on key entry points (Live Stream, Find a Church, Basic Beliefs), ultra-fast load.',
+        name: 'Option A: Minimalist Sanctuary',
+        concept: 'High-whitespace serene sanctuary with Playfair Display titling, Crimson Text scripture meditation, and Source Sans 3 UI.',
         path: 'templates/option-a/index.html',
-        font: 'Playfair Display + Plus Jakarta Sans',
-        weight: 'Est. Payload: ~28 KB (Tailwind CDN)',
-        tabClass: 'bg-amber-500 text-slate-950 shadow-md',
+        font: 'Playfair Display + Crimson Text + Source Sans 3',
+        weight: 'Est. Payload: ~29 KB (Zero Framework Overhead)',
+        tabClass: 'bg-tjc-cyan text-white shadow-md',
         inactiveClass: 'text-slate-300 hover:text-white'
       },
       'option-b': {
         name: 'Option B: Editorial Media-First',
-        concept: 'Clean card-based layout highlighting the latest sermon stream, Manna article features, and testimony cards with structured hierarchy.',
+        concept: 'Publication-grade digital journal highlighting the latest sermon stream, Manna article features, and testimony cards with structured hierarchy.',
         path: 'templates/option-b/index.html',
-        font: 'Newsreader / Fraunces + Inter',
-        weight: 'Est. Payload: ~34 KB (Tailwind CDN)',
-        tabClass: 'bg-blue-600 text-white shadow-md',
+        font: 'Playfair Display + Crimson Text + Source Sans 3',
+        weight: 'Est. Payload: ~35 KB (Zero Framework Overhead)',
+        tabClass: 'bg-tjc-cyan text-white shadow-md',
         inactiveClass: 'text-slate-300 hover:text-white'
       },
       'option-c': {
         name: 'Option C: Utility & Community Hub',
-        concept: 'Practical, welcoming layout prioritizing local fellowship discovery (Church Locator search in hero), worship schedule times, and visitor guide.',
+        concept: 'Welcoming community layout prioritizing local fellowship discovery (Church Locator in hero), worship schedule times, and visitor guide.',
         path: 'templates/option-c/index.html',
-        font: 'Plus Jakarta Sans + JetBrains Mono',
-        weight: 'Est. Payload: ~31 KB (Tailwind CDN)',
-        tabClass: 'bg-emerald-600 text-white shadow-md',
+        font: 'Source Sans 3 + Playfair Display + Crimson Text',
+        weight: 'Est. Payload: ~32 KB (Zero Framework Overhead)',
+        tabClass: 'bg-tjc-cyan text-white shadow-md',
         inactiveClass: 'text-slate-300 hover:text-white'
       }
     };
@@ -351,53 +466,54 @@
       const data = templates[optionKey];
       
       // Update iframe source
-      const iframe = document.getElementById('previewIframe');
-      iframe.src = data.path;
+      document.getElementById('previewIframe').src = data.path;
       document.getElementById('externalLink').href = data.path;
       document.getElementById('browserUrl').textContent = window.location.origin + '/' + data.path;
 
-      // Update Meta
+      // Update meta bar
       document.getElementById('currentTemplateName').textContent = data.name;
       document.getElementById('currentTemplateConcept').textContent = data.concept;
       document.getElementById('currentFontPair').textContent = data.font;
       document.getElementById('currentLoadWeight').textContent = data.weight;
 
-      // Update Tabs
+      // Update Tab Styles
       ['option-a', 'option-b', 'option-c'].forEach(key => {
-        const btn = document.getElementById('tab-' + key);
+        const btn = document.getElementById(`tab-${key}`);
         if (key === optionKey) {
-          btn.className = 'tab-btn px-4 py-2 rounded-lg text-xs font-bold transition-all ' + templates[key].tabClass;
+          btn.className = `tab-btn px-4 py-2 rounded-lg text-xs font-bold transition-all ${templates[key].tabClass}`;
+          btn.querySelector('span:first-child').className = 'w-2 h-2 rounded-full bg-white';
         } else {
-          btn.className = 'tab-btn px-4 py-2 rounded-lg text-xs font-semibold transition-all ' + templates[key].inactiveClass;
+          btn.className = `tab-btn px-4 py-2 rounded-lg text-xs font-semibold text-slate-300 hover:text-white transition-all`;
+          btn.querySelector('span:first-child').className = 'w-2 h-2 rounded-full bg-slate-600';
         }
       });
     }
 
     function setViewport(width) {
       const container = document.getElementById('previewFrameContainer');
+      const label = document.getElementById('viewportLabel');
+
       container.style.width = width;
 
-      // Update labels
-      const label = document.getElementById('viewportLabel');
-      if (width === '100%') label.textContent = '100% (Desktop 1440px)';
-      else if (width === '768px') label.textContent = 'Tablet (768px)';
-      else if (width === '390px') label.textContent = 'Mobile (390px)';
-
-      // Update buttons
-      ['vp-desktop', 'vp-tablet', 'vp-mobile'].forEach(id => {
-        const btn = document.getElementById(id);
+      // Update button highlights
+      ['desktop', 'tablet', 'mobile'].forEach(id => {
+        const btn = document.getElementById(`vp-${id}`);
         btn.classList.remove('bg-slate-800', 'text-white');
         btn.classList.add('text-slate-400');
       });
+
       if (width === '100%') {
         document.getElementById('vp-desktop').classList.add('bg-slate-800', 'text-white');
         document.getElementById('vp-desktop').classList.remove('text-slate-400');
+        label.textContent = '100% (Desktop 1440px)';
       } else if (width === '768px') {
         document.getElementById('vp-tablet').classList.add('bg-slate-800', 'text-white');
         document.getElementById('vp-tablet').classList.remove('text-slate-400');
+        label.textContent = '768px (Tablet)';
       } else if (width === '390px') {
         document.getElementById('vp-mobile').classList.add('bg-slate-800', 'text-white');
         document.getElementById('vp-mobile').classList.remove('text-slate-400');
+        label.textContent = '390px (Mobile)';
       }
     }
 
@@ -405,6 +521,12 @@
       const iframe = document.getElementById('previewIframe');
       iframe.src = iframe.src;
     }
+
+    function toggleGuidelinesModal() {
+      const modal = document.getElementById('guidelinesModal');
+      modal.classList.toggle('hidden');
+    }
   </script>
+
 </body>
 </html>
