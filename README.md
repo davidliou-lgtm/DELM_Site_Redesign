@@ -49,7 +49,7 @@ All typography follows the exact three typefaces designated in the TJC Identity 
 - **Concept**: Serene, contemplative sanctuary aesthetic with generous negative space and heavenly clarity.
 - **Palette**: Pantone 288 C (`#23356F`), Pantone 314 C (`#007DA4`), Pure White (`#FFFFFF`), Soft Sky Mist (`#F8FAFC`).
 - **Typography**: Titling in `Playfair Display`, scripture reflections in `Crimson Text`, functional UI in `Source Sans 3`.
-- **Core Focus**: Three primary tranquil entry points (*Live Sabbath Worship*, *Find a Congregation*, *10 Basic Beliefs*), scripture contemplation banner, and an ultra-lightweight footprint (~29 KB).
+- **Core Focus**: Three primary tranquil entry points (*Choose Your Language / 28 Global Sites*, *Find a Congregation*, *10 Basic Beliefs*), scripture contemplation banner, and an ultra-lightweight footprint (~24 KB).
 
 ### 2. [Option B — Editorial & Theological Journal](templates/option-b/index.html)
 - **Concept**: Publication-grade digital journal and media console inspired by *Manna Magazine* and *eRhema*.
@@ -87,19 +87,35 @@ All templates have been verified with headless browser automation:
 
 ## 🌐 Global Routing & Footer Specification
 
-All templates implement the standardized URL routing convention in a prominent footer directory:
-- `tjc.org/` — English (Global Root)
-- `tjc.org/zh` — 中文 (Chinese)
-- `tjc.org/es` — Español
-- `tjc.org/fr` — Français
-- `tjc.org/de` — Deutsch
-- `tjc.org/ja` — 日本語
-- `tjc.org/ko` — 한국어
-- `tjc.org/id` — Bahasa Indonesia
-- `tjc.org/vi` — Tiếng Việt
-- `tjc.org/pt` — Português
-- `tjc.org/ru` — Русский
-- `tjc.org/th` — ภาษาไทย
+All templates implement the standardized language directory aligned with [`tjc.org/languages-04`](https://tjc.org/loisdev/languages-04/#Home) featuring 28 global language portals:
+- Arabic (`العربية`)
+- Bengali (`বাংলা`)
+- Burmese (`မြန်မာဘာသာ`)
+- Chinese, Simplified (`简体中文`)
+- Chinese, Traditional (`繁體中文`)
+- Dutch (`Nederlands`)
+- English (`tjc.org/`)
+- Farsi (`فارسی`)
+- French (`Français`)
+- German (`Deutsch`)
+- Hindi (`हिन्दी`)
+- Indonesian (`Bahasa Indonesia`)
+- Italian (`Italiano`)
+- Japanese (`日本語`)
+- Khmer (`ភាសាខ្មែរ`)
+- Korean (`한국어`)
+- Marathi (`मराठी`)
+- Polish (`Polski`)
+- Portuguese (`Português`)
+- Russian (`Русский`)
+- Spanish (`Español`)
+- Swahili (`Kiswahili`)
+- Tamil (`தமிழ்`)
+- Telugu (`తెలుగు`)
+- Thai (`ภาษาไทย`)
+- Turkish (`Türkçe`)
+- Urdu (`اُردُو`)
+- Vietnamese (`Tiếng Việt`)
 
 ---
 
